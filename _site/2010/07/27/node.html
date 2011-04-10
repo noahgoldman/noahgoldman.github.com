@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Node and Scaling in the Small vs Scaling in the Large</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Node and Scaling in the Small vs Scaling in the Large</h1>
+<p>Over the past few weeks, I&#8217;ve been taking whatever spare moments I can find to think about what technologies we&#8217;re going to use to build the initial release of <a href="http://banksimple.net/">BankSimple</a>. Many people would probably assume that I&#8217;d immediately reach for Scala, what with having <a href="http://programmingscala.com/">co-authored a book on the language</a>, but that&#8217;s not how I approach engineering problems. Each and every problem has an appropriate set of applicable technologies, and it&#8217;s up to the engineer to justify their use.</p>
+<p>(Incidentally, Scala may well be a good fit for BankSimple, in no small part due to a bunch of third-party Java code that we need to integrate with, but that&#8217;s a whole different blog post, probably for a whole different blog.)</p>
+<p>One of the most talked-about technologies amongst the <a href="http://news.ycombinator.com/">Hacker News</a> crowd is <a href="http://nodejs.org/">Node</a>, a framework for writing and running event-driven JavaScript code on the <a href="http://code.google.com/p/v8/">V8 virtual machine</a>. As part of evaluating what tech to work with, I considered Node. Yesterday, I <a href="http://twitter.com/al3x/status/19622271040">expressed some general skepticism</a> about Node, and the framework&#8217;s author, Ryan Dahl, <a href="http://twitter.com/ryah/status/19628041485">requested</a> that I write up my thoughts in more detail. So here we are.</p>
+<p>I&#8217;m certainly not here to disparage Ryan, who&#8217;s a nice guy and a superb programmer; he knows more about low-level C than most of us could ever hope to, and without so much as a <a href="http://explorepahistory.com/images/ExplorePAHistory-a0b9d5-a_349.jpg">neckbeard</a> to show for it. Nor am I here to question the <a href="http://wiki.github.com/ry/node/">enthusiastic community</a> that&#8217;s quickly grown up around Node; if you&#8217;ve found a tool you enjoy working with and are committed to growing with it, more power to you.</p>
+<p>Rather, the purpose of this post is to question two of the Node project&#8217;s stated goals, goals which seem to me to be at cross purposes.</p>
+<h2>What&#8217;s Node For?</h2>
+<p>The <a href="http://nodejs.org/#about">About</a> section of Node&#8217;s homepage states:</p>
+<blockquote>
+<p>&#8220;Node&#8217;s goal is to provide an easy way to build scalable network programs.&#8221;</p>
+</blockquote>
+<p>Then, a couple paragraphs on, we&#8217;re told:</p>
+<blockquote>
+<p>&#8220;Because nothing blocks, less-than-expert programmers are able to develop fast systems [with Node].&#8221;</p>
+</blockquote>
+<p>So, is the purpose of Node to provide an easy way to build scalable network programs, or is it to allow less-than-expert programmers to develop &#8220;fast systems&#8221;?</p>
+<p>While these goals may appear related, they&#8217;re very different in practice. In order to better understand why, we need to make a distinction between what I&#8217;m calling &#8220;scaling in the small&#8221; and &#8220;scaling in the large&#8221;.</p>
+<h2>Scaling In the Small</h2>
+<p>In a system of no significant scale, basically anything works.</p>
+<p>The power of today&#8217;s hardware is such that, for example, you can build a web application that supports thousands of users using one of the slowest available programming languages, brutally inefficient datastore access and storage patterns, zero caching, no sensible distribution of work, no attention to locality, etc. etc. Basically, you can apply every available anti-pattern and still come out the other end with a workable system, simply because the hardware can move faster than your bad decision-making.</p>
+<p>This is a great thing, actually. It means we can prototype haphazardly using whatever technologies we hold dear, and those prototypes will often take us farther than we expected. Better still, when we hit a roadblock, getting around it is trivial. Moving forward just means spending several minutes thinking about your problem and picking an implementation technology with <em>slightly better performance characteristics</em> than whatever you were using before.</p>
+<p>This is where I believe Node fits in.</p>
+<p>If you look at who&#8217;s flocking to Node, it&#8217;s largely web developers who have been working in dynamic languages with what we could politely call <em>limited performance characteristics</em>. Adding Node to their architectures means that these developers have gone from having essentially no concurrency story and very constrained runtime performance to having some semi-sane concurrency story – one rigidly enforced by the Node framework – running on a virtual machine with comparatively respectable performance. They slice off a painful bit of their application that&#8217;s suited to asynchrony, rewrite it in Node, and move on.</p>
+<p>That&#8217;s awesome. That kind of outcome definitely meets Node&#8217;s secondary stated goal of &#8220;less-than-expert programmers&#8221; being &#8220;able to develop fast systems&#8221;. However, it has very little to do with scaling in the larger, more widely-understood sense of the term.</p>
+<h2>Scaling In the Large</h2>
+<p>In a system of significant scale, there is no magic bullet.</p>
+<p>When your system is faced with a deluge of work to do, no one technology is going to make it all better. When you&#8217;re operating at scale, pushing the needle means a complex, coordinated dance of well-applied technologies, development techniques, statistical analyses, intra-organizational communication, judicious engineering management, speedy and reliable operationalization of hardware and software, vigilant monitoring, and so forth. Scaling is <strong>hard</strong>. So hard, in fact, that the ability to scale is a deep competitive advantage of the sort that you can&#8217;t simply go out and download, copy, purchase, or steal.</p>
+<p>Herein lies my criticism of Node&#8217;s primary stated goal: &#8220;to provide an easy way to build scalable network programs&#8221;. I fundamentally do not believe that there is an easy way to build scalable <em>anything</em>. What&#8217;s happening is that people are confusing easy problems for easy solutions.</p>
+<p>If you have an easy problem that was handily solved by moving from one piece of extremely limiting technology to a bleeding-edge piece of slightly less limiting technology, consider yourself lucky, but it doesn&#8217;t mean you&#8217;re operating at scale. Twitter certainly had such an easy win when, while at a fraction of the scale the service now operates at, one of their engineers <a href="http://github.com/robey/kestrel">rewrote</a> their <a href="http://rubyforge.org/projects/starling/">in-house Ruby-based message queue</a> in Scala. That was great, but it was scaling in the small. Twitter is still fighting an uphill battle to scale in the large, because doing so is about much, much more than which technology you choose.</p>
+<h2>Growing Up Node</h2>
+<p>What concerns me about Node is that it&#8217;s going to be difficult to grow with as engineers move from scaling in the small to scaling in the large. (No, I&#8217;m not making the &#8220;callbacks turn into a pile of spaghetti code&#8221; argument, although I think you hear that time and again because it&#8217;s an actual developer pain point in async systems.)</p>
+<p>The bold thing about Node is that <em>everything</em> is asynchronous, right down to file I/O; here, I admire Ryan&#8217;s commitment to a consistent and clear thesis for his software. Engineers who deeply understand their system&#8217;s workload may find places where Node&#8217;s model is a good fit, and may be a good fit effectively indefinitely; we won&#8217;t know that until Node sees long-term mature deployment. Most systems I&#8217;ve worked on change, though. Workloads change. The data you&#8217;re moving around changes. What was once well-handed by an asynchronous solution is suddenly now better served by a threaded solution, or vice versa, or you&#8217;re faced with some other out-of-the-blue change entirely.</p>
+<p>If you&#8217;re deeply invested in Node, you&#8217;re stuck with one way of approaching concurrency; one way of modeling your problems and solutions. If it doesn&#8217;t fit into an event-based model, you&#8217;re hosed. If, on the other hand, you&#8217;re working with a system that allows for a variety of concurrency approaches (<a href="http://www.javaconcurrencyinpractice.com/">the <span class="caps">JVM</span></a>, <a href="http://msdn.microsoft.com/en-us/magazine/cc163552.aspx">the <span class="caps">CLR</span></a>, C, C++, <a href="http://www.haskell.org/haskellwiki/GHC/Concurrency"><span class="caps">GHC</span></a>, etc.), you have the flexibility to change your concurrency model as your system evolves.</p>
+<p>At the moment, Node&#8217;s core premise – that events necessarily yield performance – is still in question. Researchers at UC Berkeley <a href="http://www.usenix.org/events/hotos03/tech/full_papers/vonbehren/vonbehren_html/">found that</a> &#8220;threads can achieve all of the strengths of events, including support for high concurrency, low overhead, and a simple concurrency model&#8221;. A <a href="http://portal.acm.org/citation.cfm?doid=1272996.1273021">later study</a> that builds on that work shows that events and a pipelining approach perform equally well, and that blocking sockets can actually increase performance. In the industrial Java world, it comes up periodically that <a href="http://paultyma.blogspot.com/2008/03/writing-java-multithreaded-servers.html">non-blocking I/O isn&#8217;t necessarily a better fit than threads</a>. Even one of the most-cited documents on the subject with the blatant title of <a href="http://www.cs.sfu.ca/~vaughan/teaching/431/papers/ousterhout-threads-usenix96.pdf">Why Threads Are A Bad Idea</a> ends up concluding that you shouldn&#8217;t abandon threads for high-end servers. There just isn&#8217;t a one-size-fits-all concurrency solution.</p>
+<p>In fact, taking a hybrid approach to concurrency seems to be the way forward if the academy is any indication. Computer scientists at the University of Pennsylvania found that a combination of threads and events <a href="http://portal.acm.org/citation.cfm?id=1273442.1250756">offers the best of both worlds</a>. The Scala team at <span class="caps">EPFL</span> has argued that <a href="http://portal.acm.org/citation.cfm?id=1496422&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=96217084&amp;CFTOKEN=25102252">Actors unify thread- and event-based programming</a> into one tidy, easily comprehensible abstraction. <a href="http://research.swtch.com/">Russ Cox</a>, formerly of Bell Labs and now on the <a href="http://golang.org/">Go programming language</a> project at Google goes so far as to argue that <a href="http://swtch.com/~rsc/talks/threads07/">threads vs events is a nonsensical question</a>. (Note that none of this even begins to touch on the <em>distribution</em> aspect of scaling a system; threads are constructs for a single computer, and events are constructs for a single <span class="caps">CPU</span>. We&#8217;re not even talking about distributing work across machines in a straightforward way, as you can in Erlang, but that&#8217;s worth thinking about if you&#8217;re babysitting a rapidly growing system.)</p>
+<p>The point being: seasoned engineers are using a mix of threaded, event-based, and alternative concurrency approaches like Actors and, experimentally, <span class="caps">STM</span>. To them, the idea that &#8220;non-blocking means it&#8217;s fast&#8221; sounds, well, a bit silly; it&#8217;s scalability urban mythology. The guys that are getting paid the big bucks to deliver scalable solutions aren&#8217;t up at night feverishly rewriting their systems in Node. They&#8217;re doing what they&#8217;ve always done: measuring, testing, benchmarking, thinking hard, keeping up with the academic literature that pertains to their problems. That&#8217;s what scaling in the large necessitates.</p>
+<h2>Conclusion</h2>
+<p>For my investment of engineering time, I&#8217;d rather build on a system that allows me the flexibility of mixing an async approach with other ways of modeling concurrency. A hybrid concurrency model may not be as straightforward and pure as Node&#8217;s approach, but it&#8217;s going to be more adaptable. While BankSimple is in its infancy, we&#8217;re going to be faced with the happy problems of scaling in the small, and Node might be a reasonable choice for us at this early stage. But when we do have to scale in the large, I&#8217;d rather have a variety of options open to me, and I&#8217;d rather not be faced with the prospect of a big rewrite under pressure.</p>
+<p>Node is a lovely bit of code with an enthusiastic community, a whip-smart maintainer, and a bright future. As a &#8220;bridge technology&#8221; that offers immediate solutions to early scaling problems in a way that&#8217;s particularly accessible to a generation of web developers who largely come from dynamic language backgrounds, it makes sense. Node more than meets its secondary stated goal of bringing reasonable performance to developers of intermediate experience who need to solve network-oriented problems. Node is, for a certain breed of programmer, familiar and fun, and it&#8217;s undeniably easy to get started with. People in the Node community are having a good time reinventing the familiar wheels of web frameworks, package management, testing libraries, etc., and I don&#8217;t begrudge them that. Every programming community reinvents those things to their norms.</p>
+<p>Once we&#8217;ve made clear what Node is a good fit for, though, it&#8217;s important to remember that there are no panaceas for problems of significant scale. Node and its strictly asynchronous event-driven approach should be viewed as a <em>very</em> early point on a continuum of technologies and methodologies that comprise scaling in the large.</p>
+<p>Approach popular solutions cautiously. Everybody may be talking about a hot new technology, but very few people are actually working at a scale at which those technologies are going to be put through their paces. Those who are tend to be heads-down in numbers and research, working with tools and techniques that have been maturing over time. If you invest your time in a new technology, be ready to learn and grow with it, and maybe to jump ship when you find yourself constrained.</p>
+<p>This stuff isn&#8217;t easy.</p>
+<time class="signoff" datetime="2010-07-27">
+  &mdash;Jul 27, 2010
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

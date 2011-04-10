@@ -1,0 +1,4 @@
+auto: true
+server: true
+pygments: false
+lsi: false

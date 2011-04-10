@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Rails Deployments For Profit and Fun</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Rails Deployments For Profit and Fun</h1>
+<p>I&#8217;ve been living, sleeping, eating, and breathing Rails deployment the past couple of weeks.  It&#8217;s to the point that, once I had a breather from my professional Rails obligations, I found myself building a quick-n-dirty blog engine and doing the whole <a href="http://sysoev.ru/en/">Nginx</a> + <a href="http://mongrel.rubyforge.org/docs/mongrel_cluster.html">mongrel_cluster</a> + <a href="http://wiki.rubyonrails.org/rails/pages/Capistrano">Capistrano</a> deployment on my <a href="http://www.slicehost.com">Slicehost</a> <span class="caps">VPS</span> just for <em>fun</em>.  Sick.</p>
+<p>If I&#8217;ve been unavailable previous to this week I assure you that it was with good cause.  My clients were running our web application product through focus groups, which was exciting, informative, trying, and totally frustrating all at once.  At least I didn&#8217;t have to worry about was the stability of our app thanks to the swell guys at <a href="http://www.engineyard.com/">Engine Yard</a>.  I always arch a skeptical eyebrow at video testimonials and similar pimping, but after working with them over a weekend to make sure we were rock solid, I&#8217;d shill for them.  There&#8217;s hosting in the &#8220;put your bits on our machines and we&#8217;ll move &#8217;em&#8221; sense, and then there&#8217;s the cushy red carpet that Engine Yard rolls out.  Worth every penny.</p>
+<p>Once that was settled late last week I turned my attentions to my ailing domain.  Some of you may have noticed some <span class="caps">URL</span> breakage since I moved servers, thankyouverymuch TextPattern/<span class="caps">PHP</span>/Apache.  Since there <a href="http://al3x.net/entries/735">aren&#8217;t any good hosted blogging services</a> I took this as an opportunity to move my blog to a homebrew Rails application, in the process improving the odds that I&#8217;ll never have to look at <span class="caps">PHP</span> ever again.</p>
+<p>This site is now a minor example of the latest and greatest features of Edge Rails (soon to be Rails 1.2, mostly).  If there were any brilliant tricks I&#8217;d release the source, but honestly it looks a great deal like <a href="http://code.google.com/p/restolog/">restolog</a> thanks to strict adherence to Rails conventions.  I&#8217;m using a sessionless design and cookie-based authentication to keep things speedy, and the blog is its own admin interface once I&#8217;m logged in.  I think I&#8217;ve spent maybe six hours on it, including development, migration from TextPattern, design, and deployment.</p>
+<p>If you&#8217;re reading this in a browser, you may have noticed that the site&#8217;s design has changed a touch.  Same colors, different typography, even more minimal.  No offense to <a href="http://warpspire.com/hemingway">Hemingway</a> but that look is <em>everywhere</em> now.  I had a good run with it, though, lots of compliments. Hopefully nobody will be too put off by this new design.  Or, rather, hopefully there&#8217;s not enough to it to put anyone off.</p>
+<p>The other thing that desperately needed correcting is my lack of a public code repository.  This has been remedied with <a href="http://code.al3x.net">code.al3x.net</a>, presently running a bleeding-edge version of <a href="http://collaboa.org/">Collaboa</a>.  I&#8217;ll be sorting out public svn access once I have anything there that requires pulling more than one or two files, but this should meet the needs of anyone looking for my modified TextPattern -&gt; MT export script or my TextPattern comment count fixer-upper.</p>
+<p>The moral of all this is that Rails deployment is addictive.  Use it for your work development and everything else will feel kludgey.  You&#8217;ll be up all hours, wishing you could make a quick change and rake remote:deploy, all hallucinating that <a href="http://blog.duncandavidson.com/2006/11/image_of_a_scar.html">James Duncan Davidson</a> is crawling around your ceiling, <em>Trainspotting</em>-style.  Don&#8217;t let this happen to you.</p>
+<time class="signoff" datetime="2006-11-22">
+  &mdash;Nov 22, 2006
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

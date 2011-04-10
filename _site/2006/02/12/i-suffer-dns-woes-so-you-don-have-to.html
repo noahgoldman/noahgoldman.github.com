@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; I Suffer DNS Woes So You Don't Have To</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>I Suffer <span class="caps">DNS</span> Woes So You Don&#8217;t Have To</h1>
+<p>Of late I ran into an issue that I think a fair number of geeks have: how to use the same name for your home server wherever you are.</p>
+<p>Lots of you have servers at home and a laptop that you use to talk to that server when you&#8217;re at the coffee shop, on the road, at the office, and so forth.  That server is probably on a <span class="caps">DSL</span> or cable connection, and thus you&#8217;ve assigned a name to it via dynamic <span class="caps">DNS</span>.  That works great when you want to talk to the server from the coffee shop.  But when you&#8217;re at home, no worky, right?  You&#8217;re all &#8220;hey connect to myserver.dyndns.com&#8221; and your router is all &#8220;durr hurr that&#8217;s at the same address that I&#8217;m connected to and I can&#8217;t move your packets there hurr&#8221; and you&#8217;re all &#8220;crap.&#8221;</p>
+<p>So maybe you could get buck wild and set up <span class="caps">BIND</span> or <a href="http://cr.yp.to/djbdns.html">djbdns</a> or another full-fledged <span class="caps">DNS</span> server.  That&#8217;s overkill, though.  All you really want is a piece of software running at home that says &#8220;if someone asks where these couple of computers are, tell them they&#8217;re right here on this network, otherwise pass the question on to my ISP&#8217;s nameserver.&#8221;  That piece of software is <a href="http://dproxy.sourceforge.net/">dproxy</a>, and it totally owns.</p>
+<p>Here&#8217;s what&#8217;cha do:</p>
+<ol>
+	<li>Download dproxy to your server.  Decompress it and read the <span class="caps">README</span> file.</li>
+	<li>Build and install it.</li>
+	<li>Add the machines on your network to your server&#8217;s /etc/hosts file.</li>
+	<li>Edit the dproxy configuration file so that it talks to your favorite nameserver and (probably) doesn&#8217;t use <span class="caps">PPP</span>.</li>
+	<li>Start dproxy.</li>
+	<li>Tell the machines on your network to use your server&#8217;s IP as a <span class="caps">DNS</span> server.  On UNIXish systems this means adding it to the top of your /etc/resolv.conf file.  Don&#8217;t forget that on your server you&#8217;ll be adding 127.0.0.1, not your server&#8217;s network-facing address.</li>
+	<li>Try talking to myserver.dyndns.com from home.  Worky?</li>
+	<li>If something&#8217;s messed up, make sure your server&#8217;s firewall is allowing <span class="caps">TCP</span> and <span class="caps">UDP</span> traffic on port 53, that you told dproxy about a working nameserver, and that you sacrificed a virgin.</li>
+</ol>
+<p>Hopefully that wasn&#8217;t too painful.  I didn&#8217;t think so, at least not compared to setting up other <span class="caps">DNS</span> softaware.  On my <a href="http://fedora.redhat.com/">Fedora</a> box, dproxy even installed a handy startup script.  It worked <em>instantly</em>.  It is love.</p>
+<p>The main impetus for this, by the way, was Subversion, which doesn&#8217;t offer a brainless way to say &#8220;my server is usually at myserver.dyndns.com, but if you can&#8217;t talk to that machine, try 192.168.0.2&#8221;.  But that&#8217;s all sorted now.  Huzzah!</p>
+<time class="signoff" datetime="2006-02-12">
+  &mdash;Feb 12, 2006
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

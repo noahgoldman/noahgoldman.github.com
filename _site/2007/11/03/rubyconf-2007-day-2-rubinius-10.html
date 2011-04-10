@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; RubyConf 2007, Day 2: Rubinius 1.0</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>RubyConf 2007, Day 2: Rubinius 1.0</h1>
+<p>The second day of RubyConf began with a grip of talks on alternate Ruby VMs: IronPython (for the .<span class="caps">NET</span> platform), JRuby (for Java), and lastly Rubinius (for great justice).  Sheepishly, admit that I slept through the first two; neither .<span class="caps">NET</span> nor Java are relevant to my interests.</p>
+<p>Rubinius, however, is extremely relevant to my interets.  Evan Phoenix &mdash; runner up to Havoc Pennington in the &#8220;best name in Open Source software&#8221; competition and the project&#8217;s founder &mdash; let the science drop about the project&#8217;s pending 1.0 release.</p>
+<p>Phoenix has developed a signature presenting style: fast, direct, and punctuated by amusing, colorful slides.  He opens with a brief history of Rubinius&#8217; founding and its origins at a previous RubyConf.  Rubinius has ancestors in Smalltalk&#8217;s implementation and borrows freely from &#8220;crazy compsci papers&#8221;.  At present, the project boasts generational garbage collection, stackless execution, <span class="caps">JAR</span>-style packaging, pre-compiled files, and a host of other exciting features.</p>
+<p>The most critical part of Rubinius&#8217; implementation is that a majority of it is written in Ruby.  Rather than being purely C, C#, or Java, Rubinius has only enough C to bootstrap the remainder of the language&#8217;s core being written in Ruby.  Phoenix claims that Rubinius is &#8220;Ruby for Ruby programmers.&#8221;</p>
+<p>Currently, Rubinius is beating the standard 1.8.x Ruby implementation in 24 of 31 of the <span class="caps">YARV</span> benchmarks.  Beyond that, Phoenix isn&#8217;t interested in talking about performance at this point in time, as the implementation&#8217;s speed is highly variable at present.</p>
+<p>Rubinius isn&#8217;t done yet.  By way of explanation, Phoenix mentions that the project is learning from its mistakes and &#8220;optimizing for fun&#8221;.  Community is stressed as an important part of the project&#8217;s evolution.  Rubinius now boasts 57 committers, of whom 17 have committed frequently.  The project is eager to hand out commit rights to anyone who submits a single patch &mdash; an extremely liberal open source project management style.</p>
+<h2>Questions</h2>
+<p>First up, a hardball: should Rubinius replace <span class="caps">MRI</span> (Matz&#8217;s Ruby interpreter, the standard implementation of the language)?  Phoenix suggests that&#8217;s up to the ecosystem/community to decide what should be the standard.</p>
+<p>Can you swap in another kernel?  Yes.  The project has been designed for modularity.</p>
+<p>Are there more things you can override?  By way of answer, Phoenix mentions that the entire compiler is written in Ruby, and that it&#8217;s a &#8220;malleable system that can be changed over time.&#8221;  Compiler flags are available to change what decisions the compiler makes.</p>
+<p>How small can the kernel be?  The long-term goal is to have zero lines of C code by following some of the self-hosting strategies of Squeak&#8217;s VM.</p>
+<p>Concerns about incompatibilities?  &#8220;We try to be as compatible as we can.&#8221;</p>
+<p>Hard numbers about the project&#8217;s status and compatibility?  &quot;We&#8217;re down to 500 failing specs.  While <span class="caps">MRI</span> is the main compatibility target, &#8220;we&#8217;re trying to be as agnostic as possible with the specs.&#8221;  The specs are written in a &#8220;mini-RSpec&#8221; implementation that&#8217;s intended to be syntax-compatible with RSpec.</p>
+<p>What about the backtrace format?  Phoenix shows a trace that&#8217;s smart about showing the developer where the program actually died, even though the failure involved a method call that bridged two classes.  Rubinius will also be able to provide backtraces for segfaults in C extensions.</p>
+<p>What about NextObject?  Haven&#8217;t figured out a good way to do this yet.</p>
+<p>Continuations?  Rubinius has first-class method contexts, and Phoenix demos its use.  &#8220;A continuation is just the ability to save a point in time and go back to it&#8221;.  So, in Rubinius, you save a MethodContext and go back to it to implement continuations.</p>
+<p>Will MethodContext be serializable?  Yes, but nobody has written it yet.</p>
+<time class="signoff" datetime="2007-11-03">
+  &mdash;Nov 03, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

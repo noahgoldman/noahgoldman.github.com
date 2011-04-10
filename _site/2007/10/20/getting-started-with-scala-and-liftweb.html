@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Getting Started with Scala and Liftweb</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Getting Started with Scala and Liftweb</h1>
+<p>I&#8217;ve had an ongoing dilemma when sitting down to work on Peeramour.   I could write the site in Rails in an afternoon, which is tempting.  Thing is, I write Ruby/Rails code all day.  I&#8217;m burnt out on it.  Plus,  I&#8217;d like to learn something new if I&#8217;m going to be programming in my off-hours.</p>
+<p>Looking around the landscape of web application development, only one technology has really caught my eye: <a href="http://liftweb.net/">Liftweb</a>, a framework built with the <a href="http://www.scala-lang.org/">Scala</a> language, which in turn runs on the <span class="caps">JVM</span>.  I like that both Lift and Scala borrow successful ideas where appropriate.  I like that both are built with performance, scalability, and ease of deployment in mind.  Most of all, though, I like that neither Lift nor Scala is particularly sexy.  It&#8217;s just ugly enough to work.</p>
+<p>Getting started with Scala on Mac OS X 10.4 is pretty straightforward:Download either the Gzip or Bz2 Unix tarballs from the <a href="http://www.scala-lang.org/downloads/index.html">Scala downloads page</a>.</p>
+<p>Unpack your tarball of choice and put it somewhere sensible like ~/src/scala.</p>
+<p>Add the path to the bin directory to your shell&#8217;s <span class="caps">PATH</span>.You should now be able to run scala, type in some arithmetic expressions, that sort of thing.  Hunky-dory.  Now let&#8217;s get Lift-ed.</p>
+<ol>
+	<li>If you&#8217;ve got <a href="http://www.macports.org/">MacPorts</a> (and you should), do a sudo port install maven2.  Maven is a build system for big honkin&#8217; Java projects, and it takes care of grabbing dependencies and all sorts of junk.</li>
+	<li>Now, grab the actual <a href="http://code.google.com/p/liftweb/source">liftweb</a> source from Subversion.  The packaged versions are <em>old</em>.</li>
+	<li>Pop into your new liftweb directory and do a mvn install.  It&#8217;ll take a few minutes while Maven grabs and builds this and that, but at the end you&#8217;ll have built all the examples and whatnot.</li>
+	<li>A basic blog built in liftweb can be found in sites/hellolift.  Head over there, run maven jetty:run and you can poke around at a real actual Lift app.Instructions for starting your own liftweb project can be found <a href="http://blog.lostlake.org/index.php?/archives/62-lift-QuickStart.html">at the developer&#8217;s blog</a>.  Though that post was written in June, the invocations therein still work.</li>
+</ol>
+<p>I&#8217;m used to working in TextMate, but the only <a href="http://harnly.net/2007/blog/geek/macosx/textmate-bundle-for-scala/">Scala bundle</a> out there is pretty immature.  I&#8217;m not after a bunch of <span class="caps">IDE</span> fanciness, but good syntax highlighting is a must.  I imagine things are more hospitable in Eclipse, but that way perdition lies.   My next step is to check out the <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala-tool-support/trunk/src/vim">vim support</a>.</p>
+<p>Now that I&#8217;ve got a reasonable working environment, tomorrow I&#8217;m going to take a stab at some actual code.</p>
+<time class="signoff" datetime="2007-10-20">
+  &mdash;Oct 20, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

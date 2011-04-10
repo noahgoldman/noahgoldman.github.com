@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Tip: Easy-Access LaunchBar Terminal "Bookmarks"</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Tip: Easy-Access LaunchBar Terminal &#8220;Bookmarks&#8221;</h1>
+<p>Here&#8217;s a very little but very useful tip for you Mac OS X 10.3 users who use the fantastic <a href="http://www.obdev.at/products/launchbar/">LaunchBar</a> utility and frequently connect to remote servers via the Apple-provided Terminal application:</p>
+<ol>
+	<li>Create a folder somewhere cozy in your home directory and it &#8220;Remote Servers&#8221;, &#8220;<span class="caps">SSH</span> Servers&#8221;, &#8220;Shells&#8221;, or something of that ilk.</li>
+	<li>In Terminal, open a new terminal window with color and font settings you like and go to File -&gt; Save As&#8230;</li>
+	<li>Select the radio button in the lower portion of the Save dialog next to &#8220;Execute This Command,&#8221; and enter in the associated text field, with the appropriate substitutions:</li>
+</ol>
+<code>/usr/bin/ssh _username_</code><em>your.server.com</em>@
+<p>Whether or not to run the <span class="caps">SSH</span> process in a shell depends on if you want the window just disappearing when you log out of the remote server (don&#8217;t run in a shell) or want it to linger about telling you that it&#8217;s done its duty (do run in a shell).</p>
+<ol>
+	<li>Give this terminal file the name of <code>your.server.com</code>.</li>
+	<li>Repeat as necessary for all servers you frequently connect to.</li>
+	<li>Now in LaunchBar, go to Configuration -&gt; Open Configuration and click the &#8220;Add&#8230;&#8221; button, followed in the next dialog by the &#8220;Custom&#8221; option.</li>
+	<li>Select the folder you created in Step 1.</li>
+	<li>Once your folder appears in the list of directories that LaunchBar scans, click on it and in the drop-down details palate set Scan Type to &#8220;Any File.&#8221;  Save your configuration and tell LaunchBar to scan the selected item.</li>
+</ol>
+<p>You&#8217;re now able to open a connection to your most-used remote servers with a mere Command-Space and the first few letters of the server name!  LaunchBar will present you with your Terminal file(s), and simply hitting Return will launch a new Terminal window containing a new <span class="caps">SSH</span> connection to that remote machine.</p>
+<p>If you really want to streamline your remote work, consider generating an <span class="caps">SSH</span> keypair and uploading your public key as an authentication token: you&#8217;ll be automatically logged in on supported servers!  <a href="http://www.cs.utk.edu/~england/ssh.html">Here is</a> a solid tutorial on this process, and many others can be found.</p>
+<p>For more Mac OS X tips and tricks see <a href="http://www.macosxhints.com/">Mac OS X Hints</a>.  Enjoy!</p>
+<time class="signoff" datetime="2003-12-17">
+  &mdash;Dec 17, 2003
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

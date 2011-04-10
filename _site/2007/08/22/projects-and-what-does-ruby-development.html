@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Projects, and What Does Ruby Development Support on the Mac Really Mean?</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Projects, and What Does Ruby Development Support on the Mac Really Mean?</h1>
+<p>Work keeps me busy.  Not sleeping-under-my-desk busy, but busy enough that I&#8217;m drained at the end of the day.  The thought of writing yet more code once I&#8217;ve come home is usually unappealing.  This is frustrating, because I&#8217;ve had two side projects that I&#8217;ve been trying to get out the door for some time.  The eldest is Peeramour, which I still intend to deliver despite having long since missed my Valentine&#8217;s Day launch date.  Really, I do.</p>
+<p>A more recent project is something I call <em>Quotidian</em>, a tagged database application for the Mac in which to store quotations.  I&#8217;m not one to litter my writing, speech, and presentations with other people&#8217;s wisdom, but I like referring to relevant quotes when I&#8217;m thinking.  The multi-purpose information capture applications out there like <a href="http://www.barebones.com/products/yojimbo/">Yojimbo</a> or <a href="http://www.devon-technologies.com/products/devonthink/">DEVONthink</a> don&#8217;t do it for me in this regard.</p>
+<p>My secret motivation for writing Quotidian is that I&#8217;ve wanted an excuse to learn Cocoa programming for some time.  Initially, I was thinking that I&#8217;d learn Objective-C in the process.  I&#8217;ve since rethought this because:</p>
+<p>None of the experienced Mac programmers I&#8217;ve talked to are particularly enthused about the language, even with the upcoming improvements in Objective-C 2.0.  The consensus: &#8220;it&#8217;s fine&#8230; yeah.&#8221;</p>
+<p>There&#8217;s no long-term value to me in learning Objective-C; I&#8217;m not about to become a full-time Mac developer, nor am I eager to maintain legacy NeXT systems.  There&#8217;s nothing else one really does with Obj-C, is my impression.</p>
+<p>There are languages I could learn that would have more value to me, or at least interest me more conceptually, and I can only fit so much in my head.</p>
+<p>I know Ruby, and there&#8217;s <a href="http://rubycocoa.sourceforge.net/">RubyCocoa</a> and <a href="http://www.rubyobjc.com/.So">RubyObjC</a> last night I ran through Erik Kastner&#8217;s super handy <a href="http://metaatem.net/2007/05/27/your-first-few-days-on-rubycocoa">&#8220;Your first few days on RubyCocoa&#8221;</a> tutorial, which is more like your first fifteen minutes if you have a working Ruby install.  I wired up a simple interface to a Ruby controller, smiled when it all worked, and was then ready to start building something that looked like a real Mac application.</p>
+<p>I started by looking for a way to put a toolbar in my application.  That&#8217;s when I realized that you basically have to know everything about Cocoa programming in order to use something like RubyCocoa.  RubyCocoa is for Cocoa programmers who want to write some stuff in Ruby, not Ruby programmers who want to take advantage of Cocoa.  I&#8217;m not even sure anyone has implemented an NSToolbar with RubyCocoa (I&#8217;ll probably crib from this <a href="http://www.blog.caffeinatedmacs.com/nstoolbar-tutorial/">PyObjC</a> tutorial).</p>
+<p>I have much to learn.  So this <a href="http://antoniocangiano.com/2007/08/21/a-preliminary-review-of-three-cocoa-and-objective-c-related-books/">comparative review of several Cocoa books</a> caught my eye today.  I sympathize with the first comment:</p>
+<blockquote>
+<p>&#8220;My basic test of a Cocoa book is a coherent explanation of why Interface Builder works the way it does: the Nextstep/Cocoa notion of &#8216;outlets&#8217; and &#8216;messages&#8217; and how IB works with them is the most confusingly counterintuitive concept Ive encountered in 32 years of programming, and most books scarcely mention it.&#8221;</p>
+</blockquote>
+<p>Everybody&#8217;s been chirping about Apple supporting development in dynamic languages like Ruby and Python, seemingly based  solely on <a href="http://developer.apple.com/leopard/overview/apptech.html">this page</a> (see: &#8220;Picking Up the Pace of Cocoa Application Development&#8221;).  It&#8217;s unclear, however, what form that support will take.  As of yet, there&#8217;s nothing that illuminates the more oblique aspects of Cocoa development for us simple dynamic language folk.  What&#8217;s more, it&#8217;s not immediately clear which of the Ruby bridges will be shipping with Leopard.  While there are good community references like Tim Burks&#8217; <a href="http://www.rubycocoa.com/">RubyCocoa Resources</a>, even accomplishing basic UI tasks like <a href="http://www.rubycocoa.com/ruby-external-sheets">displaying a sheet in a window</a>  seems like much guesswork and fiddling.</p>
+<p>Some official guidance is necessary.  Does Apple really want developers building full-fledged applications in anything but Objective-C, or is its &#8220;embrace&#8221; of dynamic languages going to be as rocky an affair as its fling with Java?</p>
+<time class="signoff" datetime="2007-08-22">
+  &mdash;Aug 22, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

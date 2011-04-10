@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; RubyConf 2007, Day 2: Mac OS X Loves Ruby</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>RubyConf 2007, Day 2: Mac OS X Loves Ruby</h1>
+<p>Apple&#8217;s latest release of Mac OS X brings with it a number of improvements to and integrations with Ruby.  Speaker Laurent Sansonetti &#8211; &#8220;Ruby Ninja&#8221; on his introductory slide &#8211; is the man behind much of this work.  I&#8217;m amped for this talk.</p>
+<p>Fundamentally, the distribution of Ruby in Leopard is much improved.  It allows for multiple versions of Ruby to be present on the system, each with its own suite of gems.  The version of Ruby shipped has support for DTrace, and Ruby has been integrated into Xcode and Interface Builder.</p>
+<p>RubyCocoa, a bridge to Cocoa and C APIs, is included and supported by Apple in Leopard.  Two RubyCocoa applications, PackRat and LimeChat, are offered as examples of robust applications taking advantage of the bridge.  Leopard Server&#8217;s own Podcast Producer makes use of Rails and RubyCocoa.</p>
+<p>RubyCocoa works by creating proxies that forward messages from the Ruby runtime to its target Cocoa/C runtime.  RubyCocoa can forward exceptions, convert types, and maintains Objective-C objects for the programmer.  The bridge will also manage garbage collection.  The messaging convention is to substitute every &#8220;.&#8221; with an underscore in the method name (selector), while optionally omitting the final underscore.</p>
+<h2>Demos</h2>
+<p>Laurent then demos the creation of a simple RubyCocoa application.  He creates a simple window in Interface Builder, containing a text input box and a button labeled &#8220;Speech!&#8221;.  Over in Xcode, he whips up some Ruby (complete with decent syntax highlighting).  Interface Builder is aware of Ruby classes, outlets, and actions in the file he&#8217;s editing back in Xcode.  Predictably, the application reads aloud whatever in typed into the input box after hitting the button.  It works!  Applause.</p>
+<p>Laurent then demos CocoaRepl, which allows for real-time evaluation of Ruby code.  Window creation, Quartz Composer loading, and Ruby threads.  The audience groans with geek lust as a window containing a Quartz composition is scaled while its opacity is modified, all code being executed from CocoaRepl.</p>
+<p>A final demo: inject.rb, which allows a Ruby interpreter to be injected into the process context of a running Cocoa application.  Laurent messes around with an instance of TextEdit from irb, grabbing properties about the window, changing the window&#8217;s title and contents.  More applause.  Then, an instance of TextEdit whose input area is, itself, turned into an instance of irb.  Fun.</p>
+<p>Objective-C&#8217;s APIs are described as &#8220;introspectible&#8221;, while standard C APIs are a bit more difficult to interact with.  Apple&#8217;s new BridgeSupport provides <span class="caps">XML</span> metadata that covers static APIs, as well as a metadata generator so developers can allow bridges to take advantage of their own APIs.  BridgeSupport is being used in both Ruby and PyObjC, as well as in Xcode, which is using it for auto-completion.  Laurent demos BridgeSupport by generating metadata for libpcap and then using the resulting bridge output to write a basic sniffer in Ruby.</p>
+<p>Running low on time, Laurent runs through an overview of the DTrace support in Leopard&#8217;s Ruby.  Probes in Ruby are available for function entry and return, exceptions, garbage collection, object creation and destruction, and more.  A simple script is shown that will print function entries and returns, and said script is demoed.  Leopard provides a graphical interface to DTrace&#8217;s programmable probes called Instruments, and this is demoed tracing through an instance of LimeChat.</p>
+<p>Wrapping up, Laurent talks about some of the limitations of bridging, including caching of instances, maintaining the object model twice, and converting objects and exceptions.  Presently, RubyCocoa can&#8217;t use Objective-C 2.0&#8217;s garbage collection.  Ruby 1.8 is also not thread safe, which presents some problems (this will be alleviated in Ruby 1.9).  Laurent suggests that his team&#8217;s future goal is to write the Ruby class model on top of the Objective-C runtime, which would solve many of the problems listed above.</p>
+<h2>Questions:</h2>
+<p>Can you distribute RubyCocoa apps on OS X versions earlier than Leopard?  Yes, apparently there&#8217;s a script for that.</p>
+<p>Possible to see this on the iPhone?  Next question.  Big laughs.</p>
+<p>Is the downloadable version the same as what&#8217;s in Leopard?  Not quite, but it&#8217;s coming soon.</p>
+<p>Building with a Rakefile rather than Xcode?  You lose support, but you can try rucola as an alternative.</p>
+<p>Do you lose Objective-C semantics in the conversion process?  It&#8217;s a work in progress.</p>
+<p>Gem packaging?  standaloneify is a work in progress.</p>
+<p>Will the GC in Objective-C be committed to <span class="caps">GCC</span>?  It&#8217;s a different piece&#8230;</p>
+<p>Keeping things up to date?  You can do a gem update, but only big bugs and security problems will be addressed in Ruby itself.  Not going to overwrite 1.8 with 1.9.  Shooting for compatibility.</p>
+<p>Why RubyCocoa over RubyObjC (my question)?  RubyObjC was too small a project, wrong license, not the right features, etc.</p>
+<time class="signoff" datetime="2007-11-03">
+  &mdash;Nov 03, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

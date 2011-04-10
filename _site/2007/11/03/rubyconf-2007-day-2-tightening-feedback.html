@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; RubyConf 2007, Day 2: Tightening the Feedback Loop</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>RubyConf 2007, Day 2: Tightening the Feedback Loop</h1>
+<p>I missed the sessions after lunch due to a soul food stupor.  I regret nothing.  Currently up: Phil Hagelberg on &#8220;tightening the feedback loop,&#8221; pragmatic strategies for integrating testing into the development cycle.</p>
+<p>Hagelberg begins with a run-through of available Ruby testing tools, including Test::Unit, RSpec, and autotest.  A quick poll of the room suggests that a vast majority are using some sort of test automation.</p>
+<p>Still, Hagelberg suggests that autotest can be cumbersome and requires too much switching between the editor and terminal.  He offers Flymake &#8211; which shows compiler warnings in-editor &#8211; as an intermediate improvement.  A screenshot of a  personal experiment with an improved visualization strategy is shown.</p>
+<p>Then, a discussion of the &#8220;feedback principle&#8221;: that feedback is the output of a system is being fed back into the system&#8217;s input.  This raises questions of what to measure, how to measure it, and when to feed the output back into the system.</p>
+<p>Measuring the accuracy of feedback involves identifying a metric you care about, automating the measurement of that metric, and bringing notification of changes to the developer.  Of course, one has to measure &#8220;meta-accuracy&#8221;, ensuring your testing system itself is reliable and trustworthy.  Tools like heckle and rcov can provide a baseline of sanity for your test coverage.</p>
+<p>Testing the human-percieved maintainability of one&#8217;s code is another challenge.  While flog can offer some help, Hagelberg also suggests being judicious about a focused, clear commit strategy.</p>
+<p>Measuring performance in an automated way is worth doing.  While using a profiler is a very manual process, you can measure &#8220;black-box&#8221; response times in automated way, for example with a script that makes requests against your application.  The results of these performance measurements should be visible and readily available.  Keeping a history of feedback data is suggested.</p>
+<p>Hagelberg has a tool called <a href="http://augment.rubyforge.org/">Augment</a> that he then demos.  Augment can <span class="caps">ANSII</span>-color files to show errors and failures in yellow and red respectively.  Output is stored as <span class="caps">JSON</span> (for multi-language interchange) in an augment/ directory in your project.  There&#8217;s also an Emacs helper to bring the colorized output into the editor.</p>
+<time class="signoff" datetime="2007-11-03">
+  &mdash;Nov 03, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

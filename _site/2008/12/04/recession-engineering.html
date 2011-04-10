@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Recession Engineering</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Recession Engineering</h1>
+<p>It seems like everyone&#8217;s taking guesses as to how the <a href="http://money.cnn.com/2008/12/01/news/economy/recession/?postversion=2008120115">recession</a> will impact their little corner of the world. This is my guess.</p>
+<p><a href="http://thisisindexed.com/2008/12/might-as-well-own-this-meltdown/">&lt;img src =&#8220;http://thisisindexed.com/wp-content/uploads/2008/12/card1945-380&#215;230.jpg&#8221; /&gt;</a></p>
+<p>The trend in engineering and architecture during the <a href="http://www.businessweek.com/the_thread/techbeat/archives/2008/10/is_that_the_sou.html">now-bursting</a> Web 2.0 bubble has been one of precious little <em>engineering</em> at all. It&#8217;s become the common wisdom to ship first and scale later, and Hoare&#8217;s old <a href="http://www.acm.org/ubiquity/views/v7i24_fallacy.html">chestnut</a> of &#8220;premature optimization is the root of all evil&#8221; is a favorite flippant dismissal of any suggestion to the contrary.  Technologies that enable a fill-in-the-blanks approach to rapid development at the expense of performance have become the default choice for new companies in this environment. It&#8217;s taken for granted that <a href="http://en.wikipedia.org/wiki/Cloud_computing">The Cloud</a> will solve scalability issues because, of course, why optimize when you can just fire up more servers to run your sluggish code? Or, when you get popular, rewrite, and never mind the <a href="http://en.wikipedia.org/wiki/Second-system_effect">second-system effect</a>.</p>
+<p>The difference between investor-responsible, cost-driven development and put-the-prototype-in-production hackery can be serious money.  In a recession economy, my hunch is that this haphazard latter approach to engineering is going to be one of the first things to go.   What&#8217;s different, now, is that there needn&#8217;t be a tradeoff between performance and expressiveness, or between reliability and developer satisfaction. The tools have improved over the last several years as more organizations have faced scaling challenges, and tools matter.</p>
+<p>I&#8217;m first to admit that I have something of an agenda with this prediction. I spend a fair bit of my time working with and writing about the <a href="http://scala-lang.org">Scala programming language</a>, which provides the expressiveness and flexibility of dynamic and functional languages like Ruby, Python, and Lisp with the performance of C++ or Java.  But Scala is just one of a number of tools that can be applied to do engineering right on a budget without being miserable. The open source community has become rich with <a href="http://www.opensourcetesting.org/performance.php">performance testing tools</a>, <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks">libraries to aid test-driven development</a>, <a href="http://www.r-project.org/">powerful statistics suites</a>, and much more. Even <a href="http://www.metabrew.com/article/a-million-user-comet-application-with-mochiweb-part-2/">sharing optimization stories</a> goes a long way towards encouraging the type of performance- and correctness-oriented engineering that&#8217;s going to succeed in a tight market.</p>
+<p>I think this recession is an opportunity for a minor <a href="http://www.catonmat.net/blog/edsger-dijkstra-discipline-in-thought/">Dijkstrian</a> renaissance in the values of the tech community, and particularly the web application development community. It&#8217;s important to remember that software engineering is a <em>practice</em>, like medicine or law, and that as engineers it&#8217;s our responsibility to make the right choices on behalf of our stakeholders. My hope is that other developers survey the landscape of tools and approaches and choose those that best fit the current economic constraints.</p>
+<time class="signoff" datetime="2008-12-04">
+  &mdash;Dec 04, 2008
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

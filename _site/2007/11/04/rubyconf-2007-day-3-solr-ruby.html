@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; RubyConf 2007, Day 3: Solr-Ruby</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>RubyConf 2007, Day 3: Solr-Ruby</h1>
+<p>Solr, the Apache foundation&#8217;s open source search engine, has been good to me.  Twitter&#8217;s people search feature (the &#8220;find folks!&#8221; box you&#8217;ll see around the site) is powered by Solr, and it&#8217;s been a rock-solid piece of our infrastructure.  Speaker Erik Hatcher is a committer on Solr and the search library that powers it, Lucene.</p>
+<p>Solr boasts features like replication, faceting , highlighting, spell checking, an administrative interface, and more.  Big names like <span class="caps">CNET</span>, the Internet Archive, Netflix, Digg, and <span class="caps">AOL</span> are making use of the project.  The Lucene library is in use at Technorati, <span class="caps">IBM</span>, Monster, Wikipedia, and many more big installations.  It&#8217;s safe to say that Solr and Lucene have been battle-tested.</p>
+<p>Lucene is an <em>inverted index</em>.  You put documents into it, and those documents are composed of fields.  Inside those fields, a tokenization process finds terms after applying transformations like downcasing, whitespace removal, word-stemming, and so forth.  Those terms are then scored, and those scores are used to figure out which search results are the most relevant.</p>
+<p>Solr is a Java web application, and can be deployed on any Java application server (Jetty, by default).  Talking to Solr just requires speaking <span class="caps">HTTP</span>: <span class="caps">POST</span> to add  or update a document, <span class="caps">GET</span> to search, and so forth.  While default responses are in <span class="caps">XML</span>, it&#8217;s possible to get other formats like <span class="caps">JSON</span> or Ruby hashes back from Solr.</p>
+<p>solr-ruby is Hatcher&#8217;s library for communicating with Solr from Ruby.  He demos inserting a number of documents into a local Solr instance, and then retrieving some results in various formats directly from the browser.</p>
+<p>Some brief sample ruby-solr code is then shown, with a note that &#8220;auto-committing&#8221; can be inefficient when loading many documents at one time.  Hatcher also notes that Solr adds a primary key semantic where Lucene does not, by default.  Lucene also does not have a concept of updating a document, only replacing or adding documents.  A patch that provides updating behavior is in progress.</p>
+<p>solr-ruby is behind the acts_as_solr Rails plugin (in use on Twitter with some small modifications), Flare, Blacklight (a project by Hatcher at the University of VA), Collex (a database of literature), and more.  Hatcher suggests interacting directly with Solr as a means for sorting out bugs in acts_as_solr and other tools that hide away communication with the search engine.  Also demonstrated is Luke, the Lucence Index Toolbox, which provides a host of interesting output and modification options for a Lucene index.</p>
+<p>As a general solution for mapping Ruby objects to Solr results, Hatcher has developed Mapper.  Unfortunately, his demonstration of its code was somewhat side-tracked by an explanation of Lucene&#8217;s index structure.  In a nutshell, it allows mapping Ruby symbols to attributes in Solr documents.  The use of Procs is supported, allowing for more dynamic mappings.</p>
+<p>In the future, Hatcher is interesting in bringing parts of acts_as_solr into solr-ruby, along with more introspection into Ruby objects and an improved response writer.  He&#8217;s looking for guidance on improving the library&#8217;s <span class="caps">API</span> and <span class="caps">DSL</span>, as well as help with documentation.  You&#8217;ll find Solr-related recipes by Hatcher in the upcoming &#8220;Rails Recipes&#8221; book.</p>
+<time class="signoff" datetime="2007-11-04">
+  &mdash;Nov 04, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

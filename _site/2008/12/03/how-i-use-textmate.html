@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; How I Use TextMate</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>How I Use TextMate</h1>
+<p>Having <a href="http://al3x.net/2008/10/22/on-flight-to-old-text-editors.html">explored other text editors</a> and remained unsatisfied, I&#8217;ve committed to using <a href="http://www.macromates.com">TextMate</a> for the foreseeable future. My only hesitation was that TextMate was getting to be practically (although hyperbolically) <a href="http://en.wikipedia.org/wiki/Abandonware">abandonware</a>. Thankfully, this fear was assuaged by a recent update over the Thanksgiving holiday. It lives!</p>
+<p>I keep an eye on the <a href="http://search.twitter.com/search?q=textmate">discussion about TextMate on Twitter Search</a> to see how people use it; it always pays to learn about one&#8217;s tools. Daily, I see complaints from new and seasoned TextMate users alike that are easily addressed. To that end, I&#8217;d like to share the add-ons I use that keep TextMate and I on friendly terms.</p>
+<h2><a href="http://ciaranwal.sh/category/textmate">ProjectPlus</a></h2>
+<p>This plug-in for TextMate transforms its homely, outdated project drawer into a stylish, Leopard-style panel. ProjectPlus then imbues this new drawer with <em>powers</em>: carrying over color labels from the Finder, preserving the state of the project tree between openings, QuickLook previews, sorting options, overlaying files with their version control status, and more.</p>
+<p>This plugin alone spruces TextMate up enough that you won&#8217;t be pining away for the next major release. But read on!</p>
+<h2><a href="http://svn.textmate.org/trunk/Review/Bundles/GetBundles.tmbundle/">GetBundles</a></h2>
+<p>No, not old, inscrutable GetBundle. GetBundles, plural, is the more modern way to get new bundles for TextMate.  Bundles are tidy packages of code and resources that let TextMate work with additional languages and file types, or add features. If you&#8217;ve ever wondered &#8220;does TextMate support <em>Foo</em>?&#8221;, chances are good that there&#8217;s at least a bundle in development for it.</p>
+<p>GetBundles is totally sweet. It goes out and checks not just the official TextMate bundle repositories but <a href="http://github.com">GitHub</a> as well. Once it&#8217;s got an authoritative list of all the bundles out there, it lets you install them with a click. You don&#8217;t even need to restart TextMate to make use of newly installed bundles. GetBundles is how you should get bundles.</p>
+<p>To install, make sure you have <a href="http://subversion.tigris.org/">Subversion</a> (you do unless you&#8217;ve done something dreadful to your Mac), then fire these commands off from Terminal:</p>
+<pre>
+<code>
+  cd ~/Library/Application\ Support/TextMate/Bundles
+  svn co http://svn.textmate.org/trunk/Review/Bundles/GetBundles.tmbundle/
+</code>
+</pre>
+<p>Head back to TextMate and click <em>Bundles / Bundle Editor / Reload Bundles</em>. Then click <em>Bundles / GetBundles / Get Bundles</em> and you&#8217;re off the races. The, uh, bundle races.</p>
+<h2><a href="http://github.com/protocool/ack-tmbundle/tree/master">Ack In Project</a></h2>
+<p>One of the frequent complaints I see on Twitter about TextMate is that its Find In Project feature is slow. And, well, it is. That&#8217;s why there&#8217;s Ack In Project, which uses the speedy <a href="http://petdance.com/ack/">ack</a> tool to search your code <span class="caps">ASAP</span>. What&#8217;s more, you get beautiful, clickable results that appear as the search progresses. With Ack In Project overriding the keyboard shortcut for Find In Project, there&#8217;s no more need to complain about TextMate not keeping up with your searches. Install it right now &#8212; via GetBundles, of course.</p>
+<p>If you&#8217;re working in a language that ack doesn&#8217;t support out of the box, be sure to toggle the &#8220;Advanced options&#8221; panel of Ack In Project and check the &#8220;Load defaults from .ackrc&#8221; box. In your home directory, create a <code>.ackrc</code> file that looks like this:</p>
+<pre>
+<code>
+  --sort-files
+  --color
+  --context=1
+  --follow
+  --group
+  --all
+</code>
+</pre>
+<p>That&#8217;ll give you some handy defaults, and the <code>--all</code> option will ensure that your searches are comprehensive, even for files with weird extensions like <code>.scala</code>.</p>
+<h2>Conclusion</h2>
+<p>These three additions are my TextMate secret sauce. Depending on your particular needs, you might also get serious mileage out of the Git bundle and the Copy As <span class="caps">RTF</span> bundle, which is great for popping syntax-highlighted code into Keynote presentations.</p>
+<p>Generally, get in the habit of periodically pulling up GetBundles and seeing if there are new ways that TextMate can help you out with the languages and tools you work with. Once you&#8217;ve installed new bundles, explore what they can do either via their Help command or by browsing their contents in the Bundle Editor.</p>
+<p>Since I stopped fussing about with trying to make aging editors as smart as TextMate, I&#8217;ve been productive and satisfied. Hopefully, with these tips, you&#8217;ll be too.</p>
+<time class="signoff" datetime="2008-12-03">
+  &mdash;Dec 03, 2008
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

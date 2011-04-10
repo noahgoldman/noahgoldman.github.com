@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Alex Payne</title>
+ <link href="http://al3x.net/atom.xml" rel="self"/>
+ <link href="http://al3x.net/"/>
+ <updated>2011-04-09T07:42:18-04:00</updated>
+ <id>http://al3x.net/</id>
+ <author>
+   <name>Alex Payne</name>
+   <email>al3x@al3x.net</email>
+ </author>
+ 
+ <entry>
+   <title>All We Will Ever Have</title>
+   <link href="http://al3x.net/2011/03/23/all-we-will-ever-have.html"/>
+   <updated>2011-03-23T00:00:00-04:00</updated>
+   <id>http://al3x.net/2011/03/23/all-we-will-ever-have</id>
+   <content type="html">&lt;h1&gt;All We Will Ever Have&lt;/h1&gt;
+&lt;p&gt;At the end of last week, I &lt;a href=&quot;http://al3x.net/2011/03/18/not-a-waste.html&quot;&gt;tried&lt;/a&gt; to convey my perspective on a particular and narrow category of entrepreneurship that I do not believe is optimal. I stand by what I had to say, but the way in which I said it at the time was not effective. Such is the nature of debating challenging ideas: the burden is on the challenger.&lt;/p&gt;
+&lt;p&gt;At the very least, the exchange was food for thought. It helped me realize what&amp;#8217;s worth arguing about through words and what&amp;#8217;s worth arguing about through action.&lt;/p&gt;
+&lt;p&gt;Just as I was wrapping up a day of minor sound and fury over my post and comment, I found out that someone very close to me was diagnosed with pancreatic cancer. This person may not live to see the end of the year.&lt;/p&gt;
+&lt;p&gt;In light of that news, I&amp;#8217;ll leave the &amp;#8220;words&amp;#8221; portion of this discussion with a quote from the poet &lt;a href=&quot;http://en.wikipedia.org/wiki/Philip_Appleman&quot;&gt;Philip Appleman&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Whatever we are, whatever we make of ourselves, is all we will ever have – and that, in its profound simplicity, is the meaning of life.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Not A Waste</title>
+   <link href="http://al3x.net/2011/03/18/not-a-waste.html"/>
+   <updated>2011-03-18T00:00:00-04:00</updated>
+   <id>http://al3x.net/2011/03/18/not-a-waste</id>
+   <content type="html">&lt;h1&gt;Not A Waste&lt;/h1&gt;
+&lt;p&gt;Last night, after several long days, I was clicking through news and found a recent blog post by self-styled &amp;#8220;solopreneur&amp;#8221; Justin Vincent. Its title, &lt;a href=&quot;http://justinvincent.com/page/1392/entreporn-the-fallacy-that-wastes-your-life&quot;&gt;Entreporn, The Fallacy That Wastes Your Life&lt;/a&gt;, sort of says it all, but it&amp;#8217;s worth a read to understand the perspective of a vocal minority in the tech industry.&lt;/p&gt;
+&lt;p&gt;Frustrated by what I read, and by the &lt;a href=&quot;http://unicornfree.com/&quot;&gt;post that inspired it&lt;/a&gt; from longtime acquaintance Amy Hoy, I left a ragey, unnecessarily personal, and vitriolic &lt;a href=&quot;http://news.ycombinator.com/item?id=2338911&quot;&gt;comment&lt;/a&gt;. I&amp;#8217;d like to clarify that comment and my broader position on the discussion.&lt;/p&gt;
+&lt;h2&gt;Regarding Freckle&lt;/h2&gt;
+&lt;p&gt;I said two things that, were I still able to edit my comment, I would now remove:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;The phrase &amp;#8220;duping credulous customers&amp;#8221;. This is a stupid, loaded phrase. No reasonable person is being duped by Amy Hoy&amp;#8217;s &lt;a href=&quot;http://letsfreckle.com/&quot;&gt;Freckle&lt;/a&gt; time tracking product. Her customers have ample information with which to make a decision to subscribe to the service.&lt;/li&gt;
+	&lt;li&gt;The word &amp;#8220;overpaying&amp;#8221;. This is too subjective. For a certain type of freelancer, Freckle may be well worth the monthly outlay. Value is relative.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To be clear: I &lt;em&gt;did&lt;/em&gt; mean to call out Freckle and its creator, in no small part because she dishes it out when it comes to business and startups. I intentionally didn&amp;#8217;t mention her by name because I wanted to imply that online time-tracking tools aimed at freelancers are not exactly in short supply. My jerky comments could have been describing Freckle, but they also could have described a dozen other web applications.&lt;/p&gt;
+&lt;p&gt;At any rate, I should have omitted the above two items and engaged in more civil discourse.&lt;/p&gt;
+&lt;h2&gt;Wasn&amp;#8217;t There More Here Before?&lt;/h2&gt;
+&lt;p&gt;Earlier today, there was the more of a blog post here. The original content is still available if you look for it, but I&amp;#8217;d prefer if you didn&amp;#8217;t.&lt;/p&gt;
+&lt;p&gt;I tried to argue a very difficult-to-communicate point, and I largely failed. What I wrote baffled and infuriated friends and strangers alike. Some people got the gist of what I was trying to say, but most didn&amp;#8217;t. It&amp;#8217;s an idea that is probably better expressed through action than through words.&lt;/p&gt;
+&lt;p&gt;I have been in the habit of writing here to explore ideas that I&amp;#8217;m struggling with. Perhaps it&amp;#8217;s time to break that habit and find another avenue for those ideas. I&amp;#8217;ve come to that conclusion before, and the fact that I&amp;#8217;m coming to it again is telling.&lt;/p&gt;
+&lt;p&gt;Apologies to Amy, and to you, reader, for wasting your time.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Following Up On What Technology Values</title>
+   <link href="http://al3x.net/2011/03/04/following-up-on-what-technology-values.html"/>
+   <updated>2011-03-04T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/03/04/following-up-on-what-technology-values</id>
+   <content type="html">&lt;h1&gt;Following Up On What Technology Values&lt;/h1&gt;
+&lt;p&gt;If you enjoyed my post on &lt;a href=&quot;http://al3x.net/2011/02/21/technology-and-values.html&quot;&gt;what technology values&lt;/a&gt; and you have about half an hour to listen to two people talk, you&amp;#8217;ll probably enjoy this &lt;a href=&quot;http://www.themachinestarts.com/read/26&quot;&gt;interview&lt;/a&gt; I did for a new whip-smart blog and podcast called &lt;a href=&quot;http://www.themachinestarts.com/&quot;&gt;The Machine Starts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The interview starts with a brief discussion of how social networks fit into society and our identities, but then gets into issues of disconnecting from social technology, who businesses should be building technology for, technology&amp;#8217;s role in the current revolutions in the Middle East, and the philosophy and morality of our industry. All in all, a broad discussion that I&amp;#8217;m near-totally unqualified to be mouthing off about but had a ton of fun with.&lt;/p&gt;
+&lt;p&gt;Thanks to Chris at &lt;a href=&quot;http://www.themachinestarts.com/&quot;&gt;The Machine Starts&lt;/a&gt; for the opportunity.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Advising Simperium</title>
+   <link href="http://al3x.net/2011/03/02/simperium.html"/>
+   <updated>2011-03-02T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/03/02/simperium</id>
+   <content type="html">&lt;h1&gt;Advising Simperium&lt;/h1&gt;
+&lt;p&gt;I&amp;#8217;ve been impressed with &lt;a href=&quot;http://simplenoteapp.com/&quot;&gt;Simplenote&lt;/a&gt; since I first installed it. It has everything you want out of a good iOS app: simplicity, reliability, frequent updates, plentiful options for desktop integration, and just enough going on under the hood to keep power users happy. I recommend Simplenote at every opportunity, and I even wrote a &lt;a href=&quot;https://github.com/al3x/simple-backup&quot;&gt;backup utility&lt;/a&gt; that inspired their &lt;a href=&quot;http://simplenote-export.appspot.com/&quot;&gt;official backup solution&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This past summer, I got to meet Fred and Mike, the guys behind Simplenote. Their company is called &lt;a href=&quot;http://simperium.com/&quot;&gt;Simperium&lt;/a&gt;, and their ambitions run far beyond selling subscriptions to premium features for Simplenote. Indeed, Simplenote is just a demo – albeit an incredibly useful demo – for the sync platform that Simperium is working on.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt; is the clear leader in syncing raw bits today. They do a great job at it. The latest version of Simplenote supports syncing to Dropbox because it&amp;#8217;s so darn useful. That said, Dropbox isn&amp;#8217;t a solution for the problem of syncing structured documents. You can build that extra sync layer, but isn&amp;#8217;t easy, particularly if you&amp;#8217;re a developer who&amp;#8217;s never built a sync solution before. The beleaguered developers at &lt;a href=&quot;http://culturedcode.com/&quot;&gt;Cultured Code&lt;/a&gt; know &lt;a href=&quot;http://culturedcode.com/things/blog/2010/12/state-of-sync-part-1.html&quot;&gt;all too&lt;/a&gt; &lt;a href=&quot;http://culturedcode.com/things/blog/2011/01/state-of-sync-part-ii.html&quot;&gt;well&lt;/a&gt; that this is a hard problem. Right now, sync is a problem that&amp;#8217;s getting solved by developers over and over again in slightly different ways; some better, some worse.&lt;/p&gt;
+&lt;p&gt;What Simperium will eventually offer is an easy-to-use platform for building apps that sync. I&amp;#8217;m happy to announce that I&amp;#8217;m now an advisor to and a (very minor) investor in Simperium. I haven&amp;#8217;t worked on sync systems, but I am hoping that I can provide some insight to the Simperium team on building a developer platform and scaling out their backend systems.&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re a Simplenote user, expect the app to get better and better. If you&amp;#8217;re developing an app that needs to sync, Simperium is building a platform you&amp;#8217;ll want to use. If you rely on apps that sync, you&amp;#8217;ll be using Simperium-powered tools before you know it. Fred, Mike, and their team are up to great things, and I feel privileged to be able to support them as best I can as they take their company to the next level.&lt;/p&gt;
+&lt;p&gt;Be sure to check out the &lt;a href=&quot;http://simplenote.squarespace.com/news/2011/2/3/ios-update-sharing-passcode-lock-fixes-and-more.html&quot;&gt;latest release of Simplenote&lt;/a&gt;, which features the aforementioned Dropbox sync capability along with the ability to treat notes as lists, slick sharing and tagging, and more.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Solving The Hacker News Problem</title>
+   <link href="http://al3x.net/2011/02/22/solving-the-hacker-news-problem.html"/>
+   <updated>2011-02-22T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/02/22/solving-the-hacker-news-problem</id>
+   <content type="html">&lt;h1&gt;Solving The Hacker News Problem&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://news.ycombinator.com&quot;&gt;Hacker News&lt;/a&gt; has long since become the preeminent watering hole for startup-minded programmers and tech entrepreneurs. Like any open and growing online community, it&amp;#8217;s had its ups and downs.&lt;/p&gt;
+&lt;p&gt;Lately, Hacker News – HN for short – seems more on the decline than not. I see (and make) frequent complaints on Twitter about the quality of both submitted links and the associated discussions. Often times those complaints come from individuals who&amp;#8217;ve racked up significant karma in the community. The typical complaint is that the top items on the site are dull, dim, pandering, and inane. The most interesting items, sadly, often have the least votes.&lt;/p&gt;
+&lt;p&gt;Beyond the increasingly poor submissions, HN now has a reputation for Usenet-grade pedantry. It&amp;#8217;s become the sort of place where provocative ideas go to die at the hands of raging nerds. This is a shame, because there&amp;#8217;s no place else quite like HN on the Internet right now. You can find similarly engaging microcosms on Twitter, &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt;, &lt;a href=&quot;https://convore.com/&quot;&gt;Convore&lt;/a&gt;, and elsewhere, but HN at its best brings it all together. Unfortunately, the site is rarely at its best these days.&lt;/p&gt;
+&lt;h2&gt;What&amp;#8217;s Wrong with HN&lt;/h2&gt;
+&lt;p&gt;I believe that HN serves too many masters. When it started, the audience was clearly &amp;#8220;hackers&amp;#8221; by Paul Graham&amp;#8217;s definition: the sort of motivated and curious youngish techie people that his &lt;a href=&quot;ycombinator.com&quot;&gt;Y Combinator&lt;/a&gt; fund would like to hand checks to. Since HN launched, its audience has broadened, and the world of startups has changed, thanks in no small part to Y Combinator and the rise of other incubators, super angels, etc.&lt;/p&gt;
+&lt;p&gt;The HN community now reflects a dense spectrum of startups, from one-person &amp;#8220;lifestyle businesses&amp;#8221; on up to mature companies like Facebook and LinkedIn that might mistakenly be called &amp;#8220;startups&amp;#8221; by someone outside the tech industry simply due to the fact that they haven&amp;#8217;t gone public yet. HN boasts representatives from all of these types of firms, plus tech industry veterans, academics, students, tinkerers, wannabes, and a supporting cast of thousands.&lt;/p&gt;
+&lt;p&gt;Diversity can be asset in a community. It can also cause friction. In HN&amp;#8217;s case, you need only look at a &lt;a href=&quot;http://hnrecap.com/weekly&quot;&gt;weekly recap&lt;/a&gt; of the top submissions to see all the different directions the site is being pulled in. Listed in (totally subjective) order of frequency, you&amp;#8217;ll find:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;General tech industry news of the sort that&amp;#8217;s much better surfaced by &lt;a href=&quot;http://techmeme.com/&quot;&gt;Techmeme&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;VC and funding news of the sort that&amp;#8217;s much better surfaced by sites like &lt;a href=&quot;http://www.pehub.com/&quot;&gt;peHUB&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Startup launch announcements.&lt;/li&gt;
+	&lt;li&gt;Promotions for products and services, usually to the chagrin of HN community members.&lt;/li&gt;
+	&lt;li&gt;Pop science.&lt;/li&gt;
+	&lt;li&gt;Pop sociology.&lt;/li&gt;
+	&lt;li&gt;Pop economics.&lt;/li&gt;
+	&lt;li&gt;Pop psychology and relationship advice.&lt;/li&gt;
+	&lt;li&gt;Windbag pundit-type blog posts like this one.&lt;/li&gt;
+	&lt;li&gt;Business advice and war stories.&lt;/li&gt;
+	&lt;li&gt;Technical HOWTOs, comparative evaluations, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Clearly, a substantial number of people like this mix of content, because HN &lt;a href=&quot;http://ycombinator.com/newsnews.html&quot;&gt;continues to grow in popularity&lt;/a&gt;. For the vocal minority that isn&amp;#8217;t happy with what the site has become, the powers that be offer the facepalm-worthy hidden concession of &lt;a href=&quot;http://news.ycombinator.com/classic&quot;&gt;classic mode&lt;/a&gt;, which only pulls in submissions from longtime members. &amp;#8220;Classic&amp;#8221; is probably the single biggest sign that something isn&amp;#8217;t healthy in the HN community.&lt;/p&gt;
+&lt;p&gt;HN today is a jack of all trades and master of none. Some might say that&amp;#8217;s necessary to represent the interdisciplinary nature of the startup world, but I&amp;#8217;m skeptical of that. I think a little competition would go a long way towards improving HN and focusing the site on what it&amp;#8217;s best at: content relevant to tech industry entrepreneurs.&lt;/p&gt;
+&lt;h2&gt;What To Do About It&lt;/h2&gt;
+&lt;p&gt;Over this past Thanksgiving, I took some time to think about how I might build a competitor/alternative to HN. I asked friends inside and outside the HN community about what they like about their online hangouts. A number of common perspectives emerged:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Focus the community. Ensure that people share a common interest, goal, or set of values. Right now, HN lacks that shared focus.&lt;/li&gt;
+	&lt;li&gt;Invitations should be controlled in some way. Anyone should be able to read, but not everyone should be able to write. Demand quality.&lt;/li&gt;
+	&lt;li&gt;Effective and vigilant moderation is key.&lt;/li&gt;
+	&lt;li&gt;Copy &lt;a href=&quot;http://www.metafilter.com/&quot;&gt;MetaFilter&lt;/a&gt;. It&amp;#8217;s probably the healthiest long-lived online community out there that&amp;#8217;s based around sharing links.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I had lunch with MetaFilter&amp;#8217;s creator, &lt;a href=&quot;http://a.wholelottanothing.org/&quot;&gt;Matt Haughey&lt;/a&gt;, and got further insight from him on what&amp;#8217;s helped keep MetaFilter so good after all these years. In a nutshell: dedication on the part of the people who run it. A great community isn&amp;#8217;t something that you just set up and periodically patch. Running a great community is a full-time job, not a weekend hack project.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://www.banksimple.com/&quot;&gt;BankSimple&lt;/a&gt;, I have much more than a full-time job. I&amp;#8217;m not the right person to attempt to build an HN competitor/alternative, at least not at this point in time. I would, however, be up for steering an interested party in what I think is the right direction.&lt;/p&gt;
+&lt;p&gt;As you&amp;#8217;ve probably figured out, I think HN does a crappy job with general tech news and a so-so job with content that&amp;#8217;s specifically relevant to startup founders and employees. These days, HN does a downright terrible job with deeply technical topics; that&amp;#8217;s the area I hear the most complaining about on Twitter and in private. Since deep tech is HN&amp;#8217;s weakest point, let&amp;#8217;s go after it.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;d like to see someone borrow the best of MetaFilter&amp;#8217;s community dynamics, find a strong set of moderators and seed users, and build a competitor to HN with a focus on deeply technical news and discussion. That would leave room for HN to focus on non-technical startup issues like hiring, marketing, customer service, fundraising, tools and services, etc. Yes, in a perfect world, HN would have both the technical and business topics under one roof, because they&amp;#8217;re two sides of the same coin. That time has passed. It&amp;#8217;s just too wide and deep a set of topics for one community.&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re interested taking on this challenge, contact me. I&amp;#8217;m happy to spend some of my free time transferring my thinking and domain names to the right people. With Matt&amp;#8217;s permission, I registered the MetaFilter-aping &lt;code&gt;bloomfilter.org&lt;/code&gt; with this project in mind (also &lt;code&gt;bloomfilter.net&lt;/code&gt; and &lt;code&gt;blf.lt&lt;/code&gt; for shortened links). I&amp;#8217;m ready to donate my time and these domain names, if wanted, to the right person or group.&lt;/p&gt;
+&lt;h2&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Hacker News is slipping, which is a shame, because it can be a great community. I&amp;#8217;m ready to support an alternative community focused on deeply technical news and discussion. HN could then focus solely on business-oriented startup-centric topics. Ideally, the two sites would be healthily competitive, eventually even complementary.&lt;/p&gt;
+&lt;h2&gt;Preemptive &lt;span class=&quot;caps&quot;&gt;FAQ&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;But I love HN just the way it is!&lt;/em&gt; That&amp;#8217;s nice. Other people don&amp;#8217;t. Different strokes.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What gives you the right to judge and generalize about the entire HN community?&lt;/em&gt; Nothing. I&amp;#8217;m just some dude who&amp;#8217;s a little bit obsessed with how people communicate about technology. If you don&amp;#8217;t like what I have to say, flag it and go about your day.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Isn&amp;#8217;t it kind of bullshit to criticize HN and then ask for someone else to do the work of building an alternative?&lt;/em&gt; Yes, it kind of is, but there&amp;#8217;s only so many hours in my day and BankSimple takes up most of them. If it&amp;#8217;s any consolation, I don&amp;#8217;t want any credit or compensation from this hypothetical HN alternative/competitor. I just want it to exist, and I can spare a few hours and some domain names to help get it off the ground.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What do you mean by &amp;#8220;deeply technical&amp;#8221;?&lt;/em&gt; Substantive content by and for the people who implement technical solutions. Busy smart people want to read findings that other busy smart people decided were important enough to take the time to share. &amp;#8220;Deep&amp;#8221; to me connotes intellectual rigor, not fashionable obscurity or the unnecessarily academic.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Are you aware of Community X? I think that&amp;#8217;s what you want.&lt;/em&gt; Yes, I probably am. No, it probably isn&amp;#8217;t, but send that email anyway.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If people wanted the kind of community site you&amp;#8217;re describing, don&amp;#8217;t you think it would exist by now?&lt;/em&gt; I think it has existed in various places: HN, Reddit, Slashdot, Usenet, etc. Nobody has figured out how to capture this particular herd and get it to settle down. Maybe that&amp;#8217;s impossible. It&amp;#8217;s certainly not going to be easy.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Don&amp;#8217;t you want to build your own little fiefdom so people can read more of your excruciatingly preachy and self-important blog posts?&lt;/em&gt; No. I would moderate away my own blog posts on the community I&amp;#8217;m proposing. Frankly, they&amp;#8217;re not technical enough. I also don&amp;#8217;t submit my own posts to HN, for what it&amp;#8217;s worth. I write for myself first and foremost.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What do you have against Paul Graham and Y Combinator?&lt;/em&gt; Nothing. This is about Hacker News as a community site, not Y Combinator and the people behind it.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>What Technology Values</title>
+   <link href="http://al3x.net/2011/02/21/technology-and-values.html"/>
+   <updated>2011-02-21T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/02/21/technology-and-values</id>
+   <content type="html">&lt;h1&gt;What Technology Values&lt;/h1&gt;
+&lt;p&gt;As part of their reporting on recent events in the Middle East last week, &lt;span class=&quot;caps&quot;&gt;NPR&lt;/span&gt; ran a story called &lt;a href=&quot;http://www.npr.org/2011/02/17/133847146/Internet-Freedom-And-U-S-State-Department&quot;&gt;Internet Freedom and the US State Department&lt;/a&gt;. The story is an interview with &lt;a href=&quot;http://en.wikipedia.org/wiki/Alec_Ross_(innovator)&quot;&gt;Alec Ross&lt;/a&gt;, co-founder of nonprofit technology provider &lt;a href=&quot;http://www.one-economy.com/&quot;&gt;One Economy&lt;/a&gt; and now &lt;a href=&quot;http://news.cnet.com/8301-13578_3-10212930-38.html&quot;&gt;Senior Advisor for Innovation&lt;/a&gt; to Secretary of State Hillary Clinton.&lt;/p&gt;
+&lt;p&gt;While dodging hard questions about US companies selling restrictive or invasive technologies to repressive regimes, Mr. Ross made a statement that jumped out at me from my car stereo:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;[T]echnology itself is value-neutral. It depends on how a government chooses to use these technologies.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I believe this is an unproductive, misguided, and all too common way of thinking about technology.&lt;/p&gt;
+&lt;h2&gt;What Technology Is&lt;/h2&gt;
+&lt;p&gt;The word &amp;#8220;technology&amp;#8221; can refer to many things:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;The process of human beings inventing tools that improve our quality of life.&lt;/li&gt;
+	&lt;li&gt;A particular tool from the above category.&lt;/li&gt;
+	&lt;li&gt;An industry or amalgamation of industries producing said tools.&lt;/li&gt;
+	&lt;li&gt;The future.&lt;/li&gt;
+	&lt;li&gt;Change.&lt;/li&gt;
+	&lt;li&gt;Dehumanization.&lt;/li&gt;
+	&lt;li&gt;Progress.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And so on.&lt;/p&gt;
+&lt;p&gt;Because technology is such a malleable concept, it&amp;#8217;s frequently repurposed for political rhetoric. Want to celebrate human achievement? Technology. Want to bemoan how we&amp;#8217;re frittering our lives away on silly gadgets? Technology. Guns? Technology. Advances in treating gunshot wounds? That&amp;#8217;s technology too. Like &lt;a href=&quot;http://en.wikipedia.org/wiki/Homer_vs._the_Eighteenth_Amendment&quot;&gt;alcohol&lt;/a&gt;, technology seems to be the cause of and solution to all of life&amp;#8217;s problems.&lt;/p&gt;
+&lt;p&gt;Having found it to be a near-empty rhetorical vessel, it would seem that we&amp;#8217;re able to side with Mr. Ross in declaring technology &amp;#8220;value-neutral&amp;#8221;. We could stop here, save one important factor that changes it all.&lt;/p&gt;
+&lt;h2&gt;Technology is Made of People&lt;/h2&gt;
+&lt;p&gt;Technology is &lt;strong&gt;not an abstract entity&lt;/strong&gt;. Technology, like art or literature or music or mathematics, is a human endeavor. It is made by people and, as such, is imbued with their values, hopes, foibles, and passions.&lt;/p&gt;
+&lt;p&gt;All too often our mental concept of technology is that of a creeping and cold alien force, forever replicating and destroying everything in its path. When we think of the evils of technology, we think of &lt;a href=&quot;http://en.wikipedia.org/wiki/Borg_(Star_Trek)&quot;&gt;The Borg&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/Agent_Smith&quot;&gt;Agent Smith&lt;/a&gt;: something hostile and increasingly pervasive whose origin is unclear but whose intent is clearly malice towards all things human.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s important to remind ourselves that technology is not such a villainous force. It&amp;#8217;s not a force at all. No technology – good or evil, exceptional or mundane – is built in a vacuum. No technology is built without human intervention.&lt;/p&gt;
+&lt;p&gt;Even the most bureaucratic of technologies can&amp;#8217;t be claimed to be un-opinionated or free from our values. The lowly &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; database, workhorse of dismal trades like accounting and business analytics, is theoretically &amp;#8220;value-neutral&amp;#8221; to the data it stores. Yet, in structuring data into rows and columns of particular standard types, a set of values emerges that dictates what information is and how it should be stored and queried. Dig in to the &lt;a href=&quot;http://my.safaribooksonline.com/book/software-engineering-and-development/9780596801670/sql/feedback_and_evolution&quot;&gt;history behind &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt;&lt;/a&gt; and you&amp;#8217;ll find values and opinions aplenty.&lt;/p&gt;
+&lt;p&gt;If technology was indeed &amp;#8220;value-neutral&amp;#8221;, why would the drama of competing technologies and the personas behind them have dominated headlines for decades? Whether Mac versus PC or MySpace versus Facebook, it&amp;#8217;s clear that the values inherent in particular technologies aid in forming social clusters around those technologies. This doesn&amp;#8217;t even begin to touch on biomedical technologies, some of which threaten our values so deeply that we regulate and ban them.&lt;/p&gt;
+&lt;h2&gt;Technology Values What People Value&lt;/h2&gt;
+&lt;p&gt;Saying that &amp;#8220;technology itself is value-neutral&amp;#8221; shows a misunderstanding of the basic nature of an essential component of human society. To further wave off a political and moral responsibility to regulate technology and ensure that it&amp;#8217;s deployed in the interest of human rights is, to say the least, &lt;em&gt;puzzling&lt;/em&gt; coming from someone with a track record of using technology in positive ways.&lt;/p&gt;
+&lt;p&gt;Our &lt;em&gt;idea&lt;/em&gt; of technology appears to have supplanted the &lt;em&gt;reality&lt;/em&gt; of technology, at least in the minds of our officials. Technology is not an invisible force; it is not still air waiting to be blown hither or thither. No, technology is the work of people, and insofar as technology &amp;#8220;values&amp;#8221; anything, it reflects the values of its creators and users. Technology is born with intent. We ignore that intent at our peril.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Content-Centric Networks and the Future of the Internet</title>
+   <link href="http://al3x.net/2011/02/15/internet-future.html"/>
+   <updated>2011-02-15T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/02/15/internet-future</id>
+   <content type="html">&lt;h1&gt;Content-Centric Networks and the Future of the Internet&lt;/h1&gt;
+&lt;p&gt;Yesterday, design guru Don Norman published an &lt;a href=&quot;http://www.core77.com/blog/columns/i_have_seen_the_future_and_i_am_opposed_18532.asp&quot;&gt;essay&lt;/a&gt; expressing his fear for the future of the Internet. After exploring the cycle of imposed exclusivity that many industries go through, Norman concludes:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;I have seen the future, and if it turns out the way it is headed, I am opposed. I fear our free and continual access to information and services is doomed to be replaced by tightly controlled gardens of exclusivity.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Fear that the Internet is turning into a set of walled gardens has permeated technology and media circles for the last several years. In that time, many hands have been wrung, many rebuttals have been written, and very few solutions have been proposed. Norman&amp;#8217;s piece is no exception in this latter regard; he begins and ends with fear, not a solution in sight.&lt;/p&gt;
+&lt;p&gt;I believe there is a solution. It requires some backstory.&lt;/p&gt;
+&lt;h2&gt;TeleHash and the P2P Pipe Dream&lt;/h2&gt;
+&lt;p&gt;Earlier today, before reading Norman&amp;#8217;s essay, I was asked by one of BankSimple&amp;#8217;s investors for my thoughts on &lt;a href=&quot;http://www.telehash.org/&quot;&gt;TeleHash&lt;/a&gt;. The TeleHash project describes itself thusly:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;A new wire protocol enabling applications to connect directly in a real-time and fully distributed manner, freeing them from relying on centralized datacenters.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;TeleHash is the latest in a series of technologies and initiatives that I see as ushering in a rebirth of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Peer-to-peer&quot; title=&quot;P2P&quot;&gt;peer-to-peer&lt;/a&gt; software movement, one squarely aimed at disrupting the new Web establishment.&lt;/p&gt;
+&lt;p&gt;Smart developers are realizing that the web industry is now the media industry. The leaders of the Silicon Valley companies that grace business columns daily are media tycoons first and technologists a &lt;em&gt;very&lt;/em&gt; distant second. Walled gardens are being built to keep the money in.&lt;/p&gt;
+&lt;p&gt;Capitalism, in its endless and ironic cycle of creative destruction, abhors strongholds of wealth of power as soon as it creates them. To level the playing field, the marketplace requires mechanisms for circumventing and cutting through walled gardens.&lt;/p&gt;
+&lt;p&gt;The last time we were faced with the threat of walled gardens, in AOL&amp;#8217;s heyday, the original P2P software movement arose to cut through them. While the Internet had long boasted a variety of services that could be confidently described as peer-to-peer in their architecture, tools like &lt;a href=&quot;http://en.wikipedia.org/wiki/Gnutella&quot;&gt;Gnutella&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Freenet&quot;&gt;Freenet&lt;/a&gt;, and &lt;a href=&quot;http://en.wikipedia.org/wiki/BitTorrent&quot;&gt;BitTorrent&lt;/a&gt; further drove home the possibilities of disintermediated computing. This change coincided with the beginning of a &lt;a href=&quot;http://www.pewinternet.org/Static-Pages/Trend-Data/Home-Broadband-Adoption.aspx&quot;&gt;rise in broadband availability&lt;/a&gt; in American homes, and seemed to usher in a new era of possibility: shared remote computing resources, a communal celestial library, and so on.&lt;/p&gt;
+&lt;p&gt;The P2P pipe dream &lt;a href=&quot;http://news.cnet.com/8301-13556_3-9803427-61.html&quot;&gt;didn&amp;#8217;t last&lt;/a&gt;. Because the initial crop of P2P technologies were heavily used for piracy, the social support and investment dollars dried up. The cycle repeats, and the walled gardens are back and bigger than ever. It&amp;#8217;s almost as if the periodic creation of those walled gardens is a fundamental property of the Internet&amp;#8217;s current architecture; a truly insidious bug.&lt;/p&gt;
+&lt;h2&gt;Change, A Laughingstock&lt;/h2&gt;
+&lt;p&gt;In 2008 I wrote a &lt;a href=&quot;http://www.internetevolution.com/author.asp?section_id=708&amp;amp;doc_id=166793&quot;&gt;post&lt;/a&gt; for a site called Internet Evolution about, predictably, the future of the Internet. I wasn&amp;#8217;t at all happy with how the post was &lt;a href=&quot;http://al3x.net/2008/10/28/lessons-in-being-edited.html&quot;&gt;edited&lt;/a&gt;, and, feeling misrepresented, I quickly backed out of the resulting public discussion.&lt;/p&gt;
+&lt;p&gt;My post, I later learned, was subsequently made the laughingstock of the annual meeting of one of the Internet&amp;#8217;s major standards bodies. The godfathers of our global network chortled over a nobody programmer – a nobody programmer who then worked on a notoriously downtime-ridden site, no less – questioning their collective wisdom and the &lt;em&gt;overwhelmingly obvious&lt;/em&gt; continued success of the Internet. My pride was briefly wounded when I heard of this, but I took it as a lesson and put the experience out of mind.&lt;/p&gt;
+&lt;p&gt;Until today, when the TeleHash inquiry and Norman&amp;#8217;s post brought it up again.&lt;/p&gt;
+&lt;p&gt;The point of my post for Internet Evolution was not to suggest that the Internet as we know it is a failure, or even in danger of any kind of imminent failure (IPv4 address space depletion aside). Rather, my post was a condemnation of what I see as a clear failure to head off the scenario that Norman and others are so fearful of. Our global network could better withstand the threat of centralization. At least one solution exists.&lt;/p&gt;
+&lt;h2&gt;Content-Centric Networking&lt;/h2&gt;
+&lt;p&gt;What I wanted in my 2008 post was to bring light to an under-represented idea: &lt;a href=&quot;http://en.wikipedia.org/wiki/Content-centric_networking&quot;&gt;content-centric networking&lt;/a&gt;. Content-centric networking is a modern way of thinking about network architecture that&amp;#8217;s far better suited to how we&amp;#8217;ve come to use computers and networks. I can&amp;#8217;t do the idea justice, particularly in the space of a blog post, but the publicly available research materials should illuminate the idea for you. And oh, but it&amp;#8217;s a lovely idea.&lt;/p&gt;
+&lt;p&gt;In order for content-centric networking to be adopted, another idea need first take root: that, like any system of human design, the Internet is flawed, aging, and could be improved. Planting this seed will be difficult, as there many stakeholders whose money and/or power depend on the Internet continuing to operate as-is. Equally challenging, we&amp;#8217;re just now beginning to understand the Internet&amp;#8217;s potential; the prospect of changing something that we don&amp;#8217;t fully comprehend is daunting.&lt;/p&gt;
+&lt;p&gt;Mis-edited or not, I stand by what I said in 2008, and I agree with what Don Norman wrote yesterday. We have everything to fear from continuing down the path that the Internet is presently on. Cautious technology investments in search of quick returns will continue to keep the tech community focused on short-term, shallow problems that fit within the framework of the increasingly centralized Web. Self-congratulatory and short-sighted leadership in technical standards bodies will continue to stifle innovation. These factors combined leave us with a global network that, paradoxically, is being undermined by stagnation and greed just as we&amp;#8217;re seeing its literally revolutionary potential in places like Egypt.&lt;/p&gt;
+&lt;p&gt;The tech industry has cultivated a reputation for liberalism in popular culture. From the inside, our industry can seem stunningly conservative, particularly in the face of serious challenges that beg for new thinking. Perhaps our eyes are clouded with dollar signs: we see the profits for this year, next year, maybe five years from now, but we don&amp;#8217;t see that the decisions we make today could cap the money-well a decade on.&lt;/p&gt;
+&lt;p&gt;I believe that the first companies to break this cycle of decline by understanding and commoditizing content-centric networking will be new titans. There is unfathomable wealth and social good lingering untapped in that idea. Revealing the potential of content-centric networking, in whatever evolved form it takes, is a job for a smarter generation. More importantly, it&amp;#8217;s a job for a generation that, unlike ours, is willing to play the long game to win a better, more open future.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Shortchanging Your Business with User-Hostile Platforms</title>
+   <link href="http://al3x.net/2011/01/15/user-hostile-platforms.html"/>
+   <updated>2011-01-15T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/01/15/user-hostile-platforms</id>
+   <content type="html">&lt;h1&gt;Shortchanging Your Business with User-Hostile Platforms&lt;/h1&gt;
+&lt;p&gt;After yet another &lt;a href=&quot;http://status.37signals.com/&quot;&gt;Campfire outage&lt;/a&gt; this week (albeit a brief one), I went looking for an alternative group chat solution for our distributed team at &lt;a href=&quot;https://www.banksimple.com/&quot;&gt;BankSimple&lt;/a&gt;. Griping on Twitter led to a number of suggestions, and we gave the most frequently occurring suggestion a try.&lt;/p&gt;
+&lt;p&gt;This post isn&amp;#8217;t about group chat tools. I didn&amp;#8217;t want to call out the service we tried (and ultimately abandoned) because they don&amp;#8217;t deserve to be badmouthed. They&amp;#8217;ve built a superior product to Campfire, and their team was friendly, gracious, and willing to entertain our suggestions and inquiries. But after posting this, one of the service&amp;#8217;s developers told me to name them, so: it&amp;#8217;s &lt;a href=&quot;http://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt;. They stand by what they&amp;#8217;ve built, and I admire that.&lt;/p&gt;
+&lt;p&gt;This post is about platforms and doing the right thing by your customers. It&amp;#8217;s about the one big thing that I think HipChat and some other great companies are doing wrong.&lt;/p&gt;
+&lt;p&gt;HipChat can be used in two ways: in a web browser or as an &lt;a href=&quot;http://en.wikipedia.org/wiki/Adobe_Integrated_Runtime&quot;&gt;Adobe &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;&lt;/a&gt; application. After signing up, you&amp;#8217;re pushed pretty hard to use the &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app. The web interface has a persistent callout to install the &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app, and some key features are only available in the &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; version.&lt;/p&gt;
+&lt;p&gt;My team experienced a number of the usual problems one has with &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; applications: lousy performance, odd interface bugs, key combinations and UI elements that didn&amp;#8217;t conform to our operating system. &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; apps exist in an &lt;a href=&quot;http://en.wikipedia.org/wiki/Uncanny_valley&quot;&gt;uncanny valley&lt;/a&gt; between a web application and a desktop application, and the result is unsettling and annoying. Pretty soon, we were itching to go back to Campfire (via the native Mac client &lt;a href=&quot;http://propaneapp.com/&quot;&gt;Propane&lt;/a&gt;), even though HipChat has better features and the promise of improved reliability.&lt;/p&gt;
+&lt;p&gt;When I asked HipChat&amp;#8217;s developers about their use of &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;, the response boiled down to: &amp;#8220;we&amp;#8217;re a small team, our customers are mostly on Windows, and &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; lets us provide a cross-platform desktop app to the maximum number of customers with the least amount of effort&amp;#8221;. It&amp;#8217;s a case study for &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;, really: a tiny web shop that&amp;#8217;s able to ship a desktop app because &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; reuses their existing skills and knowledge. So what&amp;#8217;s the problem?&lt;/p&gt;
+&lt;h2&gt;Mystery Meat&lt;/h2&gt;
+&lt;p&gt;At first, I simply accepted the explanation. But the more I thought about it, the more it bugged me. It seemed like a decision that had everything to do with what&amp;#8217;s in the best interests of the business, and little to do with what&amp;#8217;s good for their customers.&lt;/p&gt;
+&lt;p&gt;Imagine a new restaurant that wants to make the most of their burgeoning lunch traffic. They start serving low-quality meat: after all, it&amp;#8217;s cheap, plentiful, and requires nothing more than placing a different order with their distributor. For a few weeks, profits are up. But pretty soon, so are customer complaints, and the stars on their Yelp page are rapidly dwindling. The owner doesn&amp;#8217;t understand. The meat isn&amp;#8217;t great, sure, but it&amp;#8217;s perfectly edible, and for a while it seemed like the restaurant was making more money and attracting new customers. What went wrong?&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;, like the &lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_widget_toolkits#Cross-platform&quot;&gt;cross-platform widget toolkits&lt;/a&gt; and application frameworks that came before it, is the gray mystery meat of client-side software. It gets the job done, but it&amp;#8217;s hard to stomach. For anyone who used a computer in the 1990s, &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; probably brings back scarring memories of Java apps: slow, ugly, inconsistent, awkward.&lt;/p&gt;
+&lt;h2&gt;Do People Really Want Native Apps?&lt;/h2&gt;
+&lt;p&gt;It sure seems that way. Five minutes of searching produced this list:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://help.rdio.com/discussions/desktop/87-feature-request-non-air-version-of-player&quot;&gt;Rdio users want a native app&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://support.mog.com/discussions/suggestions/70-native-desktop-app-not-adobe-air&quot;&gt;&lt;span class=&quot;caps&quot;&gt;MOG&lt;/span&gt; users want a native app&lt;/a&gt;, and specifically &lt;em&gt;not an &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app&lt;/em&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://getsatisfaction.com/pandora/topics/plans_for_a_pandora_client#reply_3570108&quot;&gt;Pandora users want a native app&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.rememberthemilk.com/forums/ideas/3007/&quot;&gt;Remember The Milk users have wanted a native app since 2007&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://techcrunch.com/2009/09/01/what-happened-to-adobe-air-today-no-one-seems-to-know/&quot;&gt;Yammer users want a native app&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;TweetDeck users want a native app. In comparison with other apps, &lt;a href=&quot;http://www.davidalison.com/2009/04/tweetdeck-vs-nambu-vs-tweetie.html&quot;&gt;native is a strength&lt;/a&gt;; or in more absolute terms, &lt;a href=&quot;http://thenextweb.com/2009/04/07/night-cheated-tweetdeck/&quot;&gt;native is native&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wherever you see &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; apps, there are support forum threads opened by customers asking for a native alternative, and usually a moderator explaining that they just don&amp;#8217;t &amp;#8220;have the time&amp;#8221; to do native apps for each platform. You see the same thing for popular services that only offer in-browser Flash apps. On Twitter, a significant majority of people seem to &lt;a href=&quot;http://amplicate.com/hate/adobe-air&quot;&gt;hate &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;&lt;/a&gt; if sentiment analysis is any indication.&lt;/p&gt;
+&lt;p&gt;Where developers can, they&amp;#8217;ll create unsupported third-party native apps for services that only offer &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; or Flash, even if those apps end up requiring frequent maintenance to stay in sync with the services they talk to. Propane, aforementioned, is one such application. &lt;a href=&quot;http://www.bitcartel.com/pandorajam/&quot;&gt;PandoraJam&lt;/a&gt; is another, and an interesting case study. Because Pandora doesn&amp;#8217;t offer an &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;, the developers of PandoraJam are forever playing catch-up when the streaming music service changes its design or functionality. Still, PandoraJam&amp;#8217;s developers and users suffer through the glitches and updates because they&amp;#8217;d rather have a native app. I think that&amp;#8217;s telling.&lt;/p&gt;
+&lt;h2&gt;Real Talk&lt;/h2&gt;
+&lt;p&gt;What you&amp;#8217;re communicating with a poorly-done &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app is that your business priorities – namely, saving time and money – are more important than what your customers want.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;We don&amp;#8217;t have time&amp;#8221; is the common excuse for delivering an &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app instead of a good native app. Money, though, can buy someone else&amp;#8217;s time. For a price, you can find a great contractor to build a native app for any platform under the sun. Yes, you have to spend some time managing the relationship with that contractor. It&amp;#8217;s an investment. Eventually, unless you&amp;#8217;ve misjudged your market, the investment should pay off.&lt;/p&gt;
+&lt;p&gt;Humans are gifted with extremely sensitive bullshit detectors. The average computer user may not internalize the difference between an &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app and a native app, but he knows when something doesn&amp;#8217;t feel right or work correctly. Your tech-stunted uncle may not ever request a native application with that terminology, but he&amp;#8217;ll sure complain about his computer acting funny when he experiences the oddities of an &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; app.&lt;/p&gt;
+&lt;p&gt;This isn&amp;#8217;t just about &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;, of course. As mobile apps become a mandatory part of doing business, more and more &lt;a href=&quot;http://funkatron.com/site/comments/building-cross-platform-mobile-apps/&quot;&gt;cross-platform mobile frameworks&lt;/a&gt; are cropping up. As with every cross-platform framework to date, only one in a pile of the resulting applications might even begin to pass for native. These apps &lt;em&gt;just ain&amp;#8217;t right&lt;/em&gt;, and people can tell.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Nobody uses &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; because it delivers better-quality desktop apps. Companies build &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; apps because they&amp;#8217;re short on time and cash and wary of investing in development and maintenance that&amp;#8217;s outside their area of expertise. This is understandable, but shortsighted, and a lot of companies are about to make the same mistake in the mobile arena.&lt;/p&gt;
+&lt;p&gt;Cross-platform solutions like &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; might be better for your business in the short term, but your customers probably hate it, and you could be shortchanging yourself in the long run. If there&amp;#8217;s a market, spend the time and money to build proper native desktop and mobile apps. If you don&amp;#8217;t think there&amp;#8217;s a market but the demand is there, expose an &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; to your service, let inspired developers build native apps, and see what happens.&lt;/p&gt;
+&lt;p&gt;Doing things the right way is hard. People respond to quality, though: they reward it, in no small part because quality such a rarity in the software marketplace. Do right by your customers and they&amp;#8217;ll do right by you.&lt;/p&gt;
+&lt;h2&gt;Postscript, January 16 2011&lt;/h2&gt;
+&lt;p&gt;This post generated quite a few responses. Having slept on it and mulled over the responses, I&amp;#8217;ve made &lt;a href=&quot;https://github.com/al3x/al3x.github.com/commits/master&quot;&gt;a few edits&lt;/a&gt;, including naming the chat service in question at the developer&amp;#8217;s request. I&amp;#8217;ve also tried to tone down the fierier bits.&lt;/p&gt;
+&lt;p&gt;I liked &lt;a href=&quot;http://www.kungfugrippe.com/post/2785179631/things-communicated&quot;&gt;Merlin Mann&amp;#8217;s response&lt;/a&gt;, and it made me excise a particularly off-the-rails portion of the post. You really do see the &amp;#8220;we don&amp;#8217;t have time&amp;#8221; excuse over and over again if you search around for native app requests, though; I wasn&amp;#8217;t trying to set up a straw man. I think a lot of developers genuinely would like to do a native app, but they&amp;#8217;re hesitant to make the investment. They&amp;#8217;re not all developers on one platform who have stoutly declared that they won&amp;#8217;t produce for any other platform like the Mac heavyweights he cites. Still, Merlin&amp;#8217;s point is a good one: developers don&amp;#8217;t have to build something for a different platform if that&amp;#8217;s not what they love doing.&lt;/p&gt;
+&lt;p&gt;I got an interesting email from the developer of &lt;a href=&quot;http://jamcloud.com/&quot;&gt;JamCloud&lt;/a&gt; who claims that the poor performance of many &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; apps is avoidable by using AS3 and not Flex. I don&amp;#8217;t know enough about &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; internals to validate that statement, but an alpha version of JamCloud does indeed perform well on my machine.&lt;/p&gt;
+&lt;p&gt;I got another email from the developer of &lt;a href=&quot;http://www.realsoftware.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;REAL&lt;/span&gt; Studio&lt;/a&gt; who claims that his cross-platform solution produces performant applications with native widgets. I like their &lt;a href=&quot;http://www.realsoftware.com/realstudio/qualityapps.php&quot;&gt;Quality Applications&lt;/a&gt; page. It&amp;#8217;s nice to know that they&amp;#8217;re thinking about quality and not just selling the ability to get an app out the door quickly.&lt;/p&gt;
+&lt;p&gt;I received several emails and comments from ex-&lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; developers and businesses that had tried &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; and found that it didn&amp;#8217;t meet their needs. But then, I also received some ruffled tweets from current Adobe tools developers who love &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt;. Interestingly, I didn&amp;#8217;t receive a single tweet, comment, or email from a &lt;em&gt;user&lt;/em&gt; of an &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; application who thought that &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; made his favorite application better.&lt;/p&gt;
+&lt;p&gt;Finally, Ed Finkler has posted &lt;a href=&quot;http://funkatron.com/site/comments/notes-on-shortchanging-your-business-with-user-hostile-platforms/&quot;&gt;a great reply&lt;/a&gt; that brings up the fuzzy boundary between native and non-native, and the important point that &amp;#8220;native&amp;#8221; does not guarantee &amp;#8220;well-designed&amp;#8221; and vice versa. To his mind, developers can go the extra mile to make cross-platform apps that users will love. I don&amp;#8217;t have anything against cross-platform technology itself, so I hope he&amp;#8217;s right.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>A Thought on Communication</title>
+   <link href="http://al3x.net/2011/01/10/a-thought-on-communication.html"/>
+   <updated>2011-01-10T00:00:00-05:00</updated>
+   <id>http://al3x.net/2011/01/10/a-thought-on-communication</id>
+   <content type="html">&lt;h1&gt;A Thought on Communication&lt;/h1&gt;
+&lt;p&gt;A thought; a bit of mushy futurism: that the next generation of connected humans, the progeny of &lt;a href=&quot;http://en.wikipedia.org/wiki/Digital_native&quot;&gt;digital natives&lt;/a&gt;, will probably not communicate with remote others in the way we did. This will have interesting consequences.&lt;/p&gt;
+&lt;h2&gt;Today&lt;/h2&gt;
+&lt;p&gt;We&amp;#8217;re presently just barely on the cusp of widespread one-to-one video calling. We&amp;#8217;ve had access to this technology through somewhat awkward and computer-tethered means for the past few years: iChat, Skype, etc. Assuming you&amp;#8217;re in range of a wifi network, you can video call with a person around the world from a device that fits in the palm of your hand today.&lt;/p&gt;
+&lt;p&gt;Video calling is still very much a novelty, though. Even people who use video conferencing daily for work haven&amp;#8217;t quite figured out the etiquette around it. If you&amp;#8217;re working with someone remotely over a video call, do you leave it on all day? Do you have a &lt;a href=&quot;http://news.cnet.com/8301-13772_3-20005219-52.html&quot;&gt;robot bearing your image&lt;/a&gt; wander around the office you&amp;#8217;re not at? Consensus suggests that it&amp;#8217;s definitely okay to video call your wife while, say, on a business trip, but is it okay to &lt;a href=&quot;http://en.wikipedia.org/wiki/FaceTime&quot;&gt;FaceTime&lt;/a&gt; your buddy when you just want to see if he wants to get a beer? Are group video chats an effective replacement for meetings or a disorienting waste of time? Do we want &amp;#8220;telepresence&amp;#8221; with all of its trappings, or just a phone call with a moving picture attached?&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re a post-pubescent person in a connected part of the world, you&amp;#8217;ve been raised in an communications environment that&amp;#8217;s presently text-centric, with voice communication trailing behind in importance. If you&amp;#8217;re about 30 or a bit older, you might have experienced Usenet and the heyday of &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt;. If you&amp;#8217;re in your late twenties, like me, you probably remember &lt;span class=&quot;caps&quot;&gt;AOL&lt;/span&gt; or Prodigy chat rooms giving way to &lt;span class=&quot;caps&quot;&gt;ICQ&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;AIM&lt;/span&gt;, and all the while the everpresence of email. Right now, you probably use Facebook, and maybe Twitter. Your parents have learned to use &lt;span class=&quot;caps&quot;&gt;SMS&lt;/span&gt;. You&amp;#8217;ve probably flamed or been flamed; trolled or been trolled; posted anonymously or in disguise or maybe even as someone you shouldn&amp;#8217;t have been pretending to be.&lt;/p&gt;
+&lt;p&gt;Some of us might feel that our text-based presentation of ourselves is better than the actual us: faster, wittier, more daring, more aggressive, maybe even more sexual. Whether you type in complete sentences or cutesy-curt txt-speak, there&amp;#8217;s no denying that the written word, delivered electronically and near-immediately, is a special sort of social prothesis. As more dating and courtship moves online, the individuals who can best wield this prothesis are finding the optimal mates. Needless to say, the necessity of good writing skills for business has only increased.&lt;/p&gt;
+&lt;p&gt;Our text-based environment, with its countless abbreviations and emoticons and bits of slang, has come us to define us culturally. For those suffering &lt;span class=&quot;caps&quot;&gt;RSI&lt;/span&gt;, the constant output and input streams of text have even come to define us physically.&lt;/p&gt;
+&lt;p&gt;This is where we are today. In short, text rules, and if you can write effectively (as distinct from writing &lt;em&gt;well&lt;/em&gt;), you rule too.&lt;/p&gt;
+&lt;h2&gt;Tomorrow&lt;/h2&gt;
+&lt;p&gt;Imagine twenty years from now. Your children, if you have them, are grown. By the time your children were of schooling age, plentiful bandwidth converged with improved software and hardware to make multi-way video calling a pervasive reality. Every device one would want to use for communication has this capability: computers, mobiles, game consoles. Audio software is capable of producing an accurate searchable transcript of your every word, even in noisy environments. Synthesis has improved to give all machines natural voices to speak with.&lt;/p&gt;
+&lt;p&gt;Your children have never known a world dominated by communication via digitally presented text. Sure, people still read and write, but communicating with your peers by text is now considered archaic. Video calling another individual is &lt;em&gt;de rigueur&lt;/em&gt;; group video chats are equally common. People dive in and out of group video conversations with ease. Three-dimensional presentation of these conversations is not uncommon, though maybe still a luxury in the developing world.&lt;/p&gt;
+&lt;p&gt;One&amp;#8217;s sense of place is fundamentally altered by pervasive video communication. &amp;#8220;Here&amp;#8221; begins to be a fuzzy concept and  &amp;#8220;when&amp;#8221; is next up in the firing line. These once-concrete notions are supplanted by more important concerns: who, what, and why.&lt;/p&gt;
+&lt;p&gt;This world of pervasive video necessitates beauty. It values physical poise, wardrobe, and the tenor of one&amp;#8217;s voice. Everyone becomes a newscaster reporting on her life. Video podcasts and YouTube channels only begin to foreshadow the social impact. &lt;a href=&quot;http://dailybooth.com/&quot;&gt;DailyBooth&lt;/a&gt; and &lt;a href=&quot;http://www.chatroulette.com/&quot;&gt;Chatroulette&lt;/a&gt; are mere ripples off the tide that brings these changes. There will be a new superficiality, stunning in its omnipresence, dwarfing even the shallowest points of the previous centuries, kindling for new and old industries alike. But then, there will be depth there too. We will know transcendently unifying experiences via this technology.&lt;/p&gt;
+&lt;p&gt;The aesthetics of the human face and body will be reevaluated within the context of streaming digital mobile video. Filtering and other realtime edits to the video stream will be commonplace; your use of them will connote your confidence, class, and background. Deaf persons will be aided by readily available closed-captioning and cameras capable of reading lips and translating sign language. Blind persons may be disadvantaged in a way they were not by the advent of telephony, but one hopes technology will compensate in unforeseen ways.&lt;/p&gt;
+&lt;h2&gt;Consequences&lt;/h2&gt;
+&lt;p&gt;Your children will know a very different way of relating to people who are not physically present. It will change the way they work, maintain friendships, relate to family members, fall in love, and experience the world. It will change their sense of self, and self-worth. It may be a boon, or it may be harmful. Most likely, it&amp;#8217;ll be a bit of both, because after all, it&amp;#8217;s still about people.&lt;/p&gt;
+&lt;p&gt;My generation will be at something of a loss when this new world comes about. In my life, I&amp;#8217;ve been rewarded for communicating effectively online via text. I&amp;#8217;m a reasonably effective verbal communicator, but not nearly as good as I&amp;#8217;ll need to be to compete with the telepresence-native adults that the children of today will grow up to be.&lt;/p&gt;
+&lt;p&gt;Today&amp;#8217;s digital natives will be tomorrow&amp;#8217;s telegraph operators. The only way to survive will be to understand the impact of pervasive video communication before it sweeps us under our keyboards.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+ <entry>
+   <title>Reflecting on 2010</title>
+   <link href="http://al3x.net/2010/12/30/reflecting-on-the-year.html"/>
+   <updated>2010-12-30T00:00:00-05:00</updated>
+   <id>http://al3x.net/2010/12/30/reflecting-on-the-year</id>
+   <content type="html">&lt;h1&gt;Reflecting on 2010&lt;/h1&gt;
+&lt;p&gt;This has been a Big Year for me. In 2010 I:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Got married.&lt;/li&gt;
+	&lt;li&gt;Moved from &lt;a href=&quot;http://al3x.net/2009/10/04/so-youre-moving-to-san-francisco.html&quot;&gt;San Francisco&lt;/a&gt; to Portland, Oregon.&lt;/li&gt;
+	&lt;li&gt;Quit my job at Twitter.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://al3x.net/2010/05/17/something-new.html&quot;&gt;Joined BankSimple&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Helped BankSimple &lt;a href=&quot;http://banksimple.com/blog/2010/09/01/funding-next-steps/&quot;&gt;raise our $2.9M Series A funding&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Organized the first &lt;a href=&quot;http://al3x.net/2010/04/05/elc.html&quot;&gt;Emerging Languages Camp&lt;/a&gt;, which was successful enough that it&amp;#8217;s going to become a regular part of &lt;span class=&quot;caps&quot;&gt;OSCON&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://al3x.net/2010/10/07/house.html&quot;&gt;Bought a house&lt;/a&gt; in Portland&amp;#8217;s West Hills and moved into it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In 2011 I will:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Ship &lt;a href=&quot;https://www.banksimple.com/&quot;&gt;BankSimple&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;#8217;s it. Anything else I accomplish next year is gravy.&lt;/p&gt;</content>
+   <author>
+     <name>Alex Payne</name>
+     <uri>http://al3x.net/about.html</uri>
+   </author>
+ </entry>
+ 
+</feed>

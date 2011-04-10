@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; C4-[1]: Cabel Sasser on Coda</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>C4-<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup>: Cabel Sasser on Coda</h1>
+<p>Cabel works for Panic, makers of fine Mac software like Transmit, Unison, and most recently, Coda.  Cabel met his business partner, Steven Frank, through the Amiga community when they were high school students.  After heading off to college and getting &#8220;terrible&#8221; jobs, they decided to start a Mac software company on the side during &#8220;the worst time in Apple&#8217;s history&#8221; (the Gil Amelio era).  After a stab at a software updating app that they never released, the pair decided to write a competitor to the then-standard Mac <span class="caps">FTP</span> client, Fetch.  That product was Transit, later renamed Transmit.</p>
+<p>The company&#8217;s next incarnation was &#8220;four guys in an apartment,&#8221; working on Audion and a never-released interactive chat environment called Ripcord.  They made the conscious decision to scrap much of their pre-OS X code at this juncture.  The current &#8220;version&#8221; of the company is nine people in an office in Portland.  They&#8217;ve branched into shirts as well, which makes up &#8220;5%, but a fun 5%&#8221; of their business; Cabel claims the shirts are all they wear in the office.  In the next year, Panic is looking is looking to grow, and is grappling with questions of how much to expand their staff, their stable of apps, their office space, and so forth.</p>
+<h2>Coda</h2>
+<p>At the start of their application design process, Cabel mocks up the whole application in Photoshop; each feature is a layer group.  This Photoshop document is then passed on to the engineers.</p>
+<p>Cabel describes the decision process behind picking the feature set for Coda&#8217;s features.  He shows an example of a user-friendly grep feature, the sort of subtle improvement to the text editor concept that they&#8217;d decided on for Coda.  More complex, Cabel had mocked-up an alternate toolbar look which ultimately necessitated a totally new toolbar implementation.  Apparently, this new toolbar look may make it into Leopard, as Apple has taken notice.  Cabel suggests a pragmatic and judicious application of this sort of UI revisionism.  Some UI work, like nested windows and file browsing, proved challenging, and Cabel remains unsatisfied with some of the decisions they&#8217;ve made (ex: moving single- vs double-click file browser behavior to a preference pane).</p>
+<p>The topic now changes to resolution independence.  The simplest UI elements in Coda are drawn programmatically, which solves the issue of scaling to higher resolutions.  PDFs are used for flat color and basic shapes in controls, and multi-resolution TIFFs are used elsewhere.  Cabel zooms in tightly to Coda&#8217;s interface to demonstrate the effect of through-and-through resolution independence, and it&#8217;s stunning.  For designing resolution-independent textures, Cabel recommends working with Photoshop&#8217;s vector-based shapes and applying effects thereupon.</p>
+<p>The process of deciding on a name and icon for Coda was difficult.  The application was originally named &#8220;Transmit Studio,&#8221; but this was abandoned in the icon selection process.  The Icon Factory worked up an icon of a forklift, but this was abandoned when Panic realized that an application called Forklift with an eponymous icon was on the market.  They then went in a more organic direction, embracing the concept of developers &#8220;growing&#8221; the applications they&#8217;d develop in this application.  A leaf was settled on, and after several revisions they settled on a design that&#8217;s a balance of hyper-realistic and a more idealized form.  There&#8217;s apparently a hint of fuzz around the stem of the leaf, testament to Cabel&#8217;s and icon designer David Lanham&#8217;s attention to detail.  Two sets of toolbar icons were developed, and they settled on the more literal collection.</p>
+<p>On to the top of partnering.  Panic courted the developer of CSSEdit, as they had no interest in competing with &#8220;a great <span class="caps">CSS</span> editor.&#8221;  The deal didn&#8217;t work out, so Panic wrote their own.  Panic wanted to use O&#8217;Reilly for the books section of Coda, but the publisher wanted too large a cut of every sale.  They partnered with No Starch Press instead.</p>
+<p>On the subject of anti-piracy, Cabel claims it&#8217;s a losing battle.  They attempted to block the trading of serial numbers with a &#8220;depressing message&#8221; and network serial number checking, but haven&#8217;t seen any wide trading of serial numbers yet.  They have seen one attempt at scripted serial number generation.</p>
+<p>Cabel concludes by mentioning that Panic is hiring, and that they&#8217;re open to developers who work on shareware on the side.</p>
+<h2>Questions</h2>
+<p>&#8220;Comment on the shaded look of Coda?&#8221;  Cabel says that &#8220;we&#8217;ve seen Aqua become less Aqua over time,&#8221; and remarks on the dramatic change between 10.2 and the present OS X look.  He likes the look of Leopard, and his hopeful about some of the best aspects of the iPhone making it in to the OS&#8217;s look.</p>
+<p>&#8220;Why hire a designer when you&#8217;re clearly good at it?&#8221;  Cabel claims he&#8217;s not a good artist (and that Steven Frank is a great artist but a bad designer).  He describes himself as the bottleneck in Panic&#8217;s development process because all UI elements have to be approved by him.</p>
+<p>&#8220;How did you make the decision to migrate to Cocoa?&#8221;  Cabel says it simply felt like the right thing to do at the time.</p>
+<p>&#8220;Do you really rapidly prototype in Photoshop?&#8221;  Cabel claims he does, with occasional Interface Builder mockups to grab controls from.</p>
+<p>&#8220;Any feedback on your blog post about resolution independent stuff from Apple?&#8221;  Yup!</p>
+<p>&#8220;What about the design philosophy a small, disparate Unix tools like grep?&#8221;  Cabel describes the challenge as determining the scope of the &#8220;pieces of the web design puzzle&#8221; that they put together.</p>
+<p>&#8220;How do you prototype interactivity beyond Photoshop?&#8221;  Thinking about storyboarding.</p>
+<p>&#8220;Opening up the books feature?&#8221;  It&#8217;s a very popular request.  Not sure how it&#8217;s going to look yet.</p>
+<p>(I missed a couple questions at the end.)</p>
+<time class="signoff" datetime="2007-08-12">
+  &mdash;Aug 12, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

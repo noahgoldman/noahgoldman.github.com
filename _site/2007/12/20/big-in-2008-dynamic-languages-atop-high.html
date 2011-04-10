@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The online writing of Alex Payne" name="description" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Alex Payne - Atom" href="http://feeds2.feedburner.com/al3x" />
+    <title>Alex Payne &mdash; Big in 2008: Dynamic Languages atop High-Level Languages</title>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18477555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+	    Noah Goldman
+        <a href="/about.html" title="About">About</a> writes online <a href="/" title="Home">here</a>.
+
+      </h1>
+    </header>
+    <div id="fusionad">
+  <small>advertisement</small>
+  <script type='text/javascript'><!--//<![CDATA[
+     var m3_u = (location.protocol=='https:'?'https://adn.fusionads.net/www/pull/get.php':'http://adn.fusionads.net/www/pull/get.php');
+     var m3_r = Math.floor(Math.random()*99999999999);
+     if (!document.MAX_used) document.MAX_used = ',';
+     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+     document.write ("?zoneid=38&amp;charset=UTF-8&amp;withtext=1");
+     document.write ('&amp;cb=' + m3_r);
+     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+     document.write ('&amp;charset=UTF-8');
+     document.write ("&amp;loc=" + escape(window.location));
+     if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+     if (document.context) document.write ("&context=" + escape(document.context));
+     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+     document.write ("'><\/scr"+"ipt>");
+  //]]>--></script>
+  <br />
+  <a href="http://fusionads.net" title="Powered by Fusion Ads">POWERED by FUSION</a>
+</div>
+    <div id="wrapper">
+      <h2 id="intro">An individual post follows.</h2>
+<article class="post">
+<h1>Big in 2008: Dynamic Languages atop High-Level Languages</h1>
+<p>If you&#8217;ll allow for some generalization, the mainstream programming language stack basically looks like this a stack.</p>
+<p>Dynamic, interpreted languages at the top, nitty-gritty close-to-the-machine languages at the bottom.  It hasn&#8217;t always been this way, of course, but that&#8217;s certainly been the stack for the last few years.  Lately, though, something&#8217;s been changing.  There&#8217;s a new layer on the stack.</p>
+<p>Now we&#8217;ve got dynamic languages running on top of interpreted languages, and in some cases atop other dynamic languages.  Some of these languages at the top of the stack have been in development for years, but my assertion is that 2008 will be the year that they see increased adoption across the industry.</p>
+<h2>Why?</h2>
+<p>Abstraction means increasing returns in developer productivity.  Implementing a non-trivial language in C is a hellacious challenge; implementing it in a language like Java, apparently less so given the relatively rapid time-to-market of projects like JRuby.  Environments like the Java Virtual Machine (<span class="caps">JVM</span>) and and Microsoft&#8217;s .<span class="caps">NET</span> Common Language Infrastructure (<span class="caps">CLI</span>) are written for performance and portability.  Building on a powerful VM or runtime environment allows a language implementor to inherit some powerful traits.</p>
+<p>If this trend of was only happening on the <span class="caps">JVM</span> and <span class="caps">CLI</span> it would be notable but hardly worth going on about.  What made me take pause was the emergence of <a href="http://programming.nu/">Nu</a> and <a href="http://chopine.be/lrz/diary/2007-12-07_ruby-objc-Part-1.html">ruby+objc</a>.  Nu looks like Lisp, and ruby+objc will look like Ruby, but the goal is the same: build a language that gets the Objective-C runtime to do the dirty work and focus on a pleasurable syntax and higher-level abstractions.  Implementing the language directly on the runtime has the added benefit of doing an end-run around the problems of bridging languages.</p>
+<p>Portable runtimes are big engineering efforts, typically the province of the Suns, Microsofts, and Apples of the computing world.  It&#8217;s understandable that big engineering shops would gear their runtimes towards industrial-strength languages like Java, C#, and Objective-C.  But there are plenty of projects for which an industrial-strength language is an impediment, not a boon.  Having access to a dynamic language on top of your favorite industrial-strength high-level language is an incredibly useful tool in a programmer&#8217;s toolbox.</p>
+<h2>Proving the Trend</h2>
+<p>Runtime-by-runtime, here&#8217;s a list of the languages at the top of the stack in 2008:</p>
+<h3><span class="caps">JVM</span></h3>
+<ul>
+	<li><a href="http://www.scala-lang.org/">Scala</a> &#8211; &#8220;a general purpose programming language [&#8230;], concise, elegant, and type-safe, [&#8230;] smoothly integrates features of object-oriented and functional languages&#8221;</li>
+	<li><a href="http://jruby.codehaus.org/">JRuby</a> &#8211; Ruby for Java</li>
+	<li><a href="http://www.jython.org/">Jython</a> &#8211; Python for Java</li>
+	<li><a href="http://groovy.codehaus.org/">Groovy</a> &#8211; &#8220;an agile and dynamic language for the Java Virtual Machine&#8221;</li>
+	<li><a href="http://www.robert-tolksdorf.de/vmlanguages.html">so very many more</a></li>
+</ul>
+<h3><span class="caps">NET</span> <span class="caps">CLI</span></h3>
+<ul>
+	<li><a href="http://boo.codehaus.org/">Boo</a> &#8211; &#8220;a new object oriented statically typed programming language&#8221;</li>
+	<li><a href="http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython">IronPython</a> &#8211; Python on the.<span class="caps">NET</span> <span class="caps">CLI</span></li>
+	<li><a href="http://www.ironruby.net/">IronRuby</a> &#8211; Ruby on the .<span class="caps">NET</span> <span class="caps">CLI</span></li>
+	<li><a href="http://research.microsoft.com/fsharp/fsharp.aspx">F#</a> &#8211; ML on the .<span class="caps">NET</span> <span class="caps">CLI</span>, &#8220;provides [&#8230;] type safety, performance and scripting&#8221;</li>
+	<li><a href="http://en.wikipedia.org/wiki/CLI_Languages">really quite a few more</a>, albeit not as many as on the <span class="caps">JVM</span></li>
+</ul>
+<h3>Objective-C</h3>
+<ul>
+	<li><a href="http://programming.nu/">Nu</a> &#8211;  Lisp for Cocoa</li>
+	<li><a href="http://chopine.be/lrz/diary/2007-12-07_ruby-objc-Part-1.html">ruby+objc</a> &#8211; Ruby for Cocoa</li>
+	<li><a href="http://www.fscript.org/">F-Script</a> &#8211; Smalltalk for Cocoa</li>
+</ul>
+<h3>Others</h3>
+<p>Even more out there, here are languages implemented atop dynamic languages, some experimental, some practical:</p>
+<ul>
+	<li><a href="http://www.reductivelabs.com/projects/puppet/">Puppet</a> &#8211; a &#8220;simple declarative specification language [&#8230;] written entirely in Ruby&#8221; for systems management.  We&#8217;re using Puppet to manage our new cluster at Twitter.</li>
+	<li><a href="http://t-a-w.blogspot.com/search/label/rlisp">RLisp</a> &#8211; a Lisp implemented in Ruby</li>
+	<li><a href="http://bus-scheme.rubyforge.org/">Bus Scheme</a> &#8211; &quot;a Scheme written in Ruby, but implemented on the bus!</li>
+	<li><a href="http://www.pypy.org">PyPy</a> &#8211; Python implemented in Python (but it&#8217;s actually way more than that)</li>
+</ul>
+<p>At any rate, something to watch in aught-eight.  I&#8217;d be interested to hear if any of the above languages are on your radar.</p>
+<time class="signoff" datetime="2007-12-20">
+  &mdash;Dec 20, 2007
+</time>
+</article>
+
+      <footer id="footer">
+        <a href="/" title="Home">Home</a> &bull;
+        <a href="/about.html" title="About the author and site">About</a> &bull;
+        <a href="/archive.html" title="Archived writing">Archive</a> &bull;
+        <a href="/books_talks.html" title="Books and talks">Books & Talks</a>
+        <form action="http://www.google.com/cse" id="cse-search-box">
+          <div>
+            <input type="hidden" name="cx" value="000652178004161548235:gnplrkdmhbu" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="text" name="q" size="40" />
+            <input type="submit" name="sa" value="Search" />
+          </div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>
