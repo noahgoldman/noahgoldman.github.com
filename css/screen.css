@@ -13,15 +13,15 @@ body {
 }
 
 a:link {
-  color: #336699;
+  color: #369;
   text-decoration: none;
 }
 a:visited {
-  color: #660000;
+  color: #369;
   text-decoration: none;
 }
 a:hover {
-  color: #336699;
+  color: #369;
   text-decoration: underline;
 }
 
@@ -54,7 +54,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 22px;
   margin-bottom: 18px;
 }
@@ -113,6 +113,10 @@ header, footer, nav, article { display: block; }
   font-size: 14pt;
 }
 
+#footer a {
+	padding: 5px;
+}
+
 #fusionad {
   float: right;
   margin: 75px 200px 0 10px;
@@ -124,23 +128,29 @@ header, footer, nav, article { display: block; }
 
 #intro {
   color: #666;
-  font-size: 22pt;
+  font-size: 18pt;
   margin-bottom: 24pt;
   margin-top: 24pt;
 }
 
-#subtitle, #title { color: #333; }
+#subtitle, #title { color: #369; }
 
 #subtitle {
   font-size: 24pt;
 }
 
 #title {
-  font-size: 32pt;
+  font-size: 24pt;
 }
 
 #wrapper {
   max-width: 40em;
   min-width: 30em;
   width: 32em;
+}
+
+.titlelink a {
+	padding: 5px 10px;
+	font-size: 24px;
+	color: #660000;
 }
