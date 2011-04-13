@@ -1,4 +1,4 @@
 auto: true
-server: true
+server: false 
 pygments: false
 lsi: false

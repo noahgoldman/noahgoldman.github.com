@@ -5,6 +5,9 @@ set -e
 SITE_REPO=$HOME/projects/noahgoldman.github.com
 SITE_DIR=$HOME/projects/noahgoldman.github.com/_site
 
+rm -rf $SITE_DIR
+mkdir $SITE_DIR
+
 s3fs noahgoldman.net $SITE_DIR -o use_rrs=1 -o default_acl=public-read
 
 jekyll --no-auto $SITE_REPO $SITE_DIR
@@ -12,3 +15,5 @@ jekyll --no-auto $SITE_REPO $SITE_DIR
 python compress_site.py
 
 fusermount -u $SITE_DIR
+
+exit
