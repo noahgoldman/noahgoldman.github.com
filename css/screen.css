@@ -155,4 +155,10 @@ header, footer, nav, article { display: block; }
 	color: #660000;
 }
 
-.highlight { background-color: #f8f8ff; border: 1px solid #ddd; padding: 2px 10px !important; overflow: auto }
+.highlight { 
+	background-color: #f8f8ff; 
+	border: 1px solid #ddd; 
+	padding: 2px 10px !important; 
+	overflow: auto; 
+	margin-bottom: 18px;
+}
