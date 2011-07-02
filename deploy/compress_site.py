@@ -8,4 +8,4 @@ for root, dirs, files in os.walk('/home/noah/projects/noahgoldman.github.com/_si
 			os.system('java -jar $HOME/libs/compressors/htmlcompressor.jar --compress-js --type html -o ' + file + ' ' + file)
 		elif file.find('.css') != -1:
 			os.chdir(root)
-			os.system('java -jar $HOME/libs/compressors/yuicompressor-2.4.2.jar --type css -o ' + file + ' ' + file)
+			os.system('java -jar $HOME/libs/compressors/yuicompressor-2.4.6.jar --type css -o ' + file + ' ' + file)

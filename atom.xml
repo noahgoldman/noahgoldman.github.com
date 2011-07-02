@@ -9,8 +9,8 @@ layout: nil
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://noahgoldman.net/</id>
  <author>
-   <name>Alex Payne</name>
-   <email>al3x@noahgoldman.net</email>
+   <name>Noah Goldman</name>
+   <email>noahg34@gmail.comg</email>
  </author>
  {% for post in site.posts limit:10 %}
  <entry>
@@ -20,7 +20,7 @@ layout: nil
    <id>http://noahgoldman.net/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
    <author>
-     <name>Alex Payne</name>
+     <name>Noah Goldman</name>
      <uri>http://noahgoldman.net/about.html</uri>
    </author>
  </entry>
